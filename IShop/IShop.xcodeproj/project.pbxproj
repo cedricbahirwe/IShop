@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59472635EBDC009E5801 /* IshopApp.swift */; };
 		82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59492635EBDC009E5801 /* ContentView.swift */; };
 		82EC594C2635EBDD009E5801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC594B2635EBDD009E5801 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82EC59442635EBDC009E5801 /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EC59472635EBDC009E5801 /* IshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopApp.swift; sourceTree = "<group>"; };
 		82EC59492635EBDC009E5801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				82EC59802635ED0C009E5801 /* SpashScreenView.swift */,
+				826AA1EE2636008E001EFDBB /* OnBoardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				82EC59512635EBDD009E5801 /* Persistence.swift in Sources */,
 				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
+				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
 				82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */,
 				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
