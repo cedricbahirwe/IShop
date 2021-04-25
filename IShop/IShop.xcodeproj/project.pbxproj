@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59472635EBDC009E5801 /* IshopApp.swift */; };
+		82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59492635EBDC009E5801 /* ContentView.swift */; };
+		82EC594C2635EBDD009E5801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC594B2635EBDD009E5801 /* Assets.xcassets */; };
+		82EC594F2635EBDD009E5801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC594E2635EBDD009E5801 /* Preview Assets.xcassets */; };
+		82EC59512635EBDD009E5801 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59502635EBDD009E5801 /* Persistence.swift */; };
+		82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59522635EBDD009E5801 /* Ishop.xcdatamodeld */; };
+		82EC595F2635EBDD009E5801 /* IshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC595E2635EBDD009E5801 /* IshopTests.swift */; };
+		82EC596A2635EBDD009E5801 /* IshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59692635EBDD009E5801 /* IshopUITests.swift */; };
+		82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC597A2635EBEB009E5801 /* CoreDataView.swift */; };
+		82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59802635ED0C009E5801 /* SpashScreenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82EC595B2635EBDD009E5801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82EC593C2635EBDC009E5801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82EC59432635EBDC009E5801;
+			remoteInfo = Ishop;
+		};
+		82EC59662635EBDD009E5801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82EC593C2635EBDC009E5801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82EC59432635EBDC009E5801;
+			remoteInfo = Ishop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82EC59442635EBDC009E5801 /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EC59472635EBDC009E5801 /* IshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopApp.swift; sourceTree = "<group>"; };
+		82EC59492635EBDC009E5801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82EC594B2635EBDD009E5801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82EC594E2635EBDD009E5801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82EC59502635EBDD009E5801 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		82EC59532635EBDD009E5801 /* Ishop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ishop.xcdatamodel; sourceTree = "<group>"; };
+		82EC59552635EBDD009E5801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82EC595A2635EBDD009E5801 /* IshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EC595E2635EBDD009E5801 /* IshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopTests.swift; sourceTree = "<group>"; };
+		82EC59602635EBDD009E5801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82EC59652635EBDD009E5801 /* IshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EC59692635EBDD009E5801 /* IshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IshopUITests.swift; sourceTree = "<group>"; };
+		82EC596B2635EBDD009E5801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82EC597A2635EBEB009E5801 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
+		82EC59802635ED0C009E5801 /* SpashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashScreenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82EC59412635EBDC009E5801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59572635EBDD009E5801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59622635EBDD009E5801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82EC593B2635EBDC009E5801 = {
+			isa = PBXGroup;
+			children = (
+				82EC59462635EBDC009E5801 /* Ishop */,
+				82EC595D2635EBDD009E5801 /* IshopTests */,
+				82EC59682635EBDD009E5801 /* IshopUITests */,
+				82EC59452635EBDC009E5801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82EC59452635EBDC009E5801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59442635EBDC009E5801 /* Ishop.app */,
+				82EC595A2635EBDD009E5801 /* IshopTests.xctest */,
+				82EC59652635EBDD009E5801 /* IshopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82EC59462635EBDC009E5801 /* Ishop */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59472635EBDC009E5801 /* IshopApp.swift */,
+				82EC59492635EBDC009E5801 /* ContentView.swift */,
+				82EC597F2635ED01009E5801 /* Views */,
+				82EC597A2635EBEB009E5801 /* CoreDataView.swift */,
+				82EC594B2635EBDD009E5801 /* Assets.xcassets */,
+				82EC59502635EBDD009E5801 /* Persistence.swift */,
+				82EC59552635EBDD009E5801 /* Info.plist */,
+				82EC59522635EBDD009E5801 /* Ishop.xcdatamodeld */,
+				82EC594D2635EBDD009E5801 /* Preview Content */,
+			);
+			path = Ishop;
+			sourceTree = "<group>";
+		};
+		82EC594D2635EBDD009E5801 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82EC594E2635EBDD009E5801 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82EC595D2635EBDD009E5801 /* IshopTests */ = {
+			isa = PBXGroup;
+			children = (
+				82EC595E2635EBDD009E5801 /* IshopTests.swift */,
+				82EC59602635EBDD009E5801 /* Info.plist */,
+			);
+			path = IshopTests;
+			sourceTree = "<group>";
+		};
+		82EC59682635EBDD009E5801 /* IshopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59692635EBDD009E5801 /* IshopUITests.swift */,
+				82EC596B2635EBDD009E5801 /* Info.plist */,
+			);
+			path = IshopUITests;
+			sourceTree = "<group>";
+		};
+		82EC597F2635ED01009E5801 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59802635ED0C009E5801 /* SpashScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82EC59432635EBDC009E5801 /* Ishop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EC596E2635EBDD009E5801 /* Build configuration list for PBXNativeTarget "Ishop" */;
+			buildPhases = (
+				82EC59402635EBDC009E5801 /* Sources */,
+				82EC59412635EBDC009E5801 /* Frameworks */,
+				82EC59422635EBDC009E5801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ishop;
+			productName = Ishop;
+			productReference = 82EC59442635EBDC009E5801 /* Ishop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82EC59592635EBDD009E5801 /* IshopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EC59712635EBDD009E5801 /* Build configuration list for PBXNativeTarget "IshopTests" */;
+			buildPhases = (
+				82EC59562635EBDD009E5801 /* Sources */,
+				82EC59572635EBDD009E5801 /* Frameworks */,
+				82EC59582635EBDD009E5801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EC595C2635EBDD009E5801 /* PBXTargetDependency */,
+			);
+			name = IshopTests;
+			productName = IshopTests;
+			productReference = 82EC595A2635EBDD009E5801 /* IshopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82EC59642635EBDD009E5801 /* IshopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EC59742635EBDD009E5801 /* Build configuration list for PBXNativeTarget "IshopUITests" */;
+			buildPhases = (
+				82EC59612635EBDD009E5801 /* Sources */,
+				82EC59622635EBDD009E5801 /* Frameworks */,
+				82EC59632635EBDD009E5801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EC59672635EBDD009E5801 /* PBXTargetDependency */,
+			);
+			name = IshopUITests;
+			productName = IshopUITests;
+			productReference = 82EC59652635EBDD009E5801 /* IshopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82EC593C2635EBDC009E5801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					82EC59432635EBDC009E5801 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					82EC59592635EBDD009E5801 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 82EC59432635EBDC009E5801;
+					};
+					82EC59642635EBDD009E5801 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 82EC59432635EBDC009E5801;
+					};
+				};
+			};
+			buildConfigurationList = 82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "Ishop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82EC593B2635EBDC009E5801;
+			productRefGroup = 82EC59452635EBDC009E5801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82EC59432635EBDC009E5801 /* Ishop */,
+				82EC59592635EBDD009E5801 /* IshopTests */,
+				82EC59642635EBDD009E5801 /* IshopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82EC59422635EBDC009E5801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC594F2635EBDD009E5801 /* Preview Assets.xcassets in Resources */,
+				82EC594C2635EBDD009E5801 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59582635EBDD009E5801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59632635EBDD009E5801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82EC59402635EBDC009E5801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC59512635EBDD009E5801 /* Persistence.swift in Sources */,
+				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
+				82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */,
+				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
+				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
+				82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59562635EBDD009E5801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC595F2635EBDD009E5801 /* IshopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EC59612635EBDD009E5801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC596A2635EBDD009E5801 /* IshopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82EC595C2635EBDD009E5801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82EC59432635EBDC009E5801 /* Ishop */;
+			targetProxy = 82EC595B2635EBDD009E5801 /* PBXContainerItemProxy */;
+		};
+		82EC59672635EBDD009E5801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82EC59432635EBDC009E5801 /* Ishop */;
+			targetProxy = 82EC59662635EBDD009E5801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		82EC596C2635EBDD009E5801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82EC596D2635EBDD009E5801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82EC596F2635EBDD009E5801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ishop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.Ishop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82EC59702635EBDD009E5801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ishop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ishop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.Ishop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82EC59722635EBDD009E5801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IshopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.IshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ishop.app/Ishop";
+			};
+			name = Debug;
+		};
+		82EC59732635EBDD009E5801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IshopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.IshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ishop.app/Ishop";
+			};
+			name = Release;
+		};
+		82EC59752635EBDD009E5801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IshopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.IshopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ishop;
+			};
+			name = Debug;
+		};
+		82EC59762635EBDD009E5801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IshopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedo.Ishop.IshopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ishop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "Ishop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EC596C2635EBDD009E5801 /* Debug */,
+				82EC596D2635EBDD009E5801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EC596E2635EBDD009E5801 /* Build configuration list for PBXNativeTarget "Ishop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EC596F2635EBDD009E5801 /* Debug */,
+				82EC59702635EBDD009E5801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EC59712635EBDD009E5801 /* Build configuration list for PBXNativeTarget "IshopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EC59722635EBDD009E5801 /* Debug */,
+				82EC59732635EBDD009E5801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EC59742635EBDD009E5801 /* Build configuration list for PBXNativeTarget "IshopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EC59752635EBDD009E5801 /* Debug */,
+				82EC59762635EBDD009E5801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82EC59522635EBDD009E5801 /* Ishop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82EC59532635EBDD009E5801 /* Ishop.xcdatamodel */,
+			);
+			currentVersion = 82EC59532635EBDD009E5801 /* Ishop.xcdatamodel */;
+			path = Ishop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82EC593C2635EBDC009E5801 /* Project object */;
+}
