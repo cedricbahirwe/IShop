@@ -51,17 +51,17 @@ struct OnBoardingView: View {
                         Spacer()
                         
                         if selectedStep != .three {
-                        Button(action: {
-                            
-                            if selectedStep  == .one {
-                                selectedStep = .two
-                            } else if selectedStep == .two {
-                                selectedStep = .three
+                            Button(action: {
+                                
+                                if selectedStep  == .one {
+                                    selectedStep = .two
+                                } else if selectedStep == .two {
+                                    selectedStep = .three
+                                }
+                            }) {
+                                Text("Next")
+                                    .fontWeight(.medium)
                             }
-                        }) {
-                            Text("Next")
-                                .fontWeight(.medium)
-                        }
                         }
                     }
                     
@@ -78,7 +78,6 @@ struct OnBoardingView: View {
             }
         }
         .animation(.default)
-        .padding(.top, 40)
         .foregroundColor(.mainBlack)
         .onChange(of: selectedStep, perform: updateLayout)
     }
@@ -117,7 +116,7 @@ struct OnBoardingView: View {
             offsetX = -size.width*2
         }
     }
-   
+    
 }
 
 struct OnBoardingView_Previews: PreviewProvider {
@@ -132,33 +131,34 @@ extension OnBoardingView {
         let step: OnBoardingModel
         
         var body: some View {
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading) {
                 Group {
                     if let img = step.image {
                         img
                             .resizable()
                             .scaledToFill()
-                            .frame(width: size.width-20, height: 380)
+                            .frame(width: size.width-20)
+                            .frame(maxHeight: 300)
                             .clipped()
                             .background(Color.gray.opacity(0.2))
                         
                     } else {
                         ImagePlaceHolder()
                     }
-                }.padding(.bottom)
+                }
+                .padding(.bottom)
                 
                 Text(step.title)
                     .font(.title)
                     .fontWeight(.bold)
-                    
                 
                 Text(step.description)
                     .font(.title3)
-                
+                    .layoutPriority(1)
             }
             .padding(.horizontal)
             
         }
     }
-
+    
 }
