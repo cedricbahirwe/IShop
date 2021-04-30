@@ -17,7 +17,7 @@ struct OnBoardingView: View {
     
     private let onboardingSteps: [OnBoardingModel] = [
         OnBoardingModel(image: Image("shopping"), title: "Shop Everyday Products", description: "We deliver groceries, drinks, and home goods daily direct from our warehouse to you in one hour or less."),
-        OnBoardingModel(image: Image("delivery"), title: "Get Delivery \n When You Need It", description: "Your time matters. IShop delivers your order directly from our fulfillment centers. We don't rely on 3rd party stores. Get your products when you want them."),
+        OnBoardingModel(image: Image("delivery"), title: "Get Delivery \nWhen You Need It", description: "Your time matters. IShop delivers your order directly from our fulfillment centers. We don't rely on 3rd party stores. Get your products when you want them."),
         OnBoardingModel(image: Image("fees"), title: "Save Big On Fees", description: "Pricing should not be a game. Our delivery fee is simple, and our product prices are fair. \nShop with confindence.")
     ]
     @State private var offsetX: CGFloat = .zero
@@ -34,6 +34,7 @@ struct OnBoardingView: View {
                     .frame(width: geo.frame(in: .global).width)
                     
                 }
+//                .background(Color.red.edgesIgnoringSafeArea(.top))
                 .offset(x: offsetX)
                 .highPriorityGesture(
                     DragGesture()
@@ -65,7 +66,7 @@ struct OnBoardingView: View {
                         }
                     }
                     
-                    Button(action: { }) {
+                    Button(action: {}) {
                         Text("Start Shopping")
                             .fontWeight(.medium)
                             .foregroundColor(.mainBackground)
@@ -75,6 +76,7 @@ struct OnBoardingView: View {
                     }
                 }
                 .padding()
+                
             }
         }
         .animation(.default)
@@ -137,7 +139,7 @@ extension OnBoardingView {
                         img
                             .resizable()
                             .scaledToFill()
-                            .frame(width: size.width-20)
+                            .frame(maxWidth: size.width-30)
                             .frame(maxHeight: 300)
                             .clipped()
                             .background(Color.gray.opacity(0.2))
@@ -146,7 +148,6 @@ extension OnBoardingView {
                         ImagePlaceHolder()
                     }
                 }
-                .padding(.bottom)
                 
                 Text(step.title)
                     .font(.title)
@@ -154,7 +155,7 @@ extension OnBoardingView {
                 
                 Text(step.description)
                     .font(.title3)
-                    .layoutPriority(1)
+                    .opacity(0.85)
             }
             .padding(.horizontal)
             
