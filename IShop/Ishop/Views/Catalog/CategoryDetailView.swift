@@ -15,7 +15,9 @@ struct Drink: Identifiable {
     var formattedPrice: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-        
+        formatter.locale = Locale(identifier: "en_US")
+//        formatter.currencyCode = "CDF"
+//        formatter.currencyCode = "USD"
         return formatter.string(from: NSNumber(value: price)) ?? "$0"
     }
 }
