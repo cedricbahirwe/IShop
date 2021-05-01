@@ -14,14 +14,19 @@ struct NotificationApprovalView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    mainObject.showLocationApprovalView.toggle()
+                    withAnimation(.easeIn) {
+                        mainObject.showNotificationApprovalView = false
+                        mainObject.showLocationApprovalView.toggle()
+                    }
+                    
                 }) {
                     Text("Skip")
                         .foregroundColor(.mainBlack)
                     
                 }
+                .padding([.top, .trailing])
             }
-            .padding(.trailing)
+
             OnboardingStepView(step: OnBoardingModel(image: Image("notifications"), title: "Allow Push Notifications", description: "IShop needs to send you notifications to keep you updated about discounts, coupons, etc."))
             Spacer()
             Button(action: {

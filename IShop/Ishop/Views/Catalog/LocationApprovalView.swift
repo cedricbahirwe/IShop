@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct LocationApprovalView: View {
+    @EnvironmentObject private var mainObject: MainViewModel
     var body: some View {
         
         VStack {
             HStack {
                 Spacer()
-                Button(action: {}) {
+                
+                Button(action: {
+                    mainObject.showLocationApprovalView = false
+                    mainObject.goToMainCatalog = true
+                }) {
                     Text("Skip")
                         .foregroundColor(.mainBlack)
                     
                 }
+                .padding([.top, .trailing])
             }
             
             OnboardingStepView(step: OnBoardingModel(image: Image("location"), title: "Allow Location services", description: "IShop needs to send you notifications to keep you updated about discounts, coupons, etc."))
@@ -31,8 +37,9 @@ struct LocationApprovalView: View {
                     .fontWeight(.medium)
                     .largeButtonStyle()
             }
+            .padding()
+
         }
-        .padding()
     }
 }
 

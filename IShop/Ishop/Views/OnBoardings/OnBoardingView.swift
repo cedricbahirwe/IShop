@@ -20,6 +20,10 @@ struct OnBoardingView: View {
     
     var body: some View {
         GeometryReader { geo in
+            NavigationLink(
+                destination: CatalogHomeView(),
+                isActive: $mainObject.goToMainCatalog) { }
+            
             VStack(alignment: .leading) {
                 HStack(spacing: 0) {
                     ForEach(
@@ -62,7 +66,7 @@ struct OnBoardingView: View {
                     }
                     
                     Button(action: {
-                        mainObject.showNotApprView.toggle
+                        mainObject.showNotificationApprovalView = true
                     }) {
                         Text("Start Shopping")
                             .fontWeight(.medium)
@@ -76,8 +80,16 @@ struct OnBoardingView: View {
         .animation(.default)
         .foregroundColor(.mainBlack)
         .onChange(of: selectedStep, perform: updateLayout)
-        .fullScreenCover(isPresented: $mainObject.showNotApprView) {
-            NotificationApprovalView()
+        .sheet(
+            isPresented: mainObject.showNotificationApprovalView ?
+            $mainObject.showNotificationApprovalView :
+                $mainObject.showLocationApprovalView
+        ) {
+            if mainObject.showNotificationApprovalView {
+                NotificationApprovalView()
+            } else {
+                LocationApprovalView()
+            }
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
