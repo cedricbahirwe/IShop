@@ -63,12 +63,14 @@ struct CatalogHomeView: View {
                                         ZStack {
                                             Text(category)
                                                 .font(Font.callout.bold())
+                                                .foregroundColor(.mainBlack)
                                         }
                                         .padding(10)
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                         .frame(height: size.width/2.5, alignment: .top)
                                         .background(Color.gray.opacity(0.1))
                                         .cornerRadius(10)
+                                        
                                     }
                                 }
                             }
@@ -84,6 +86,7 @@ struct CatalogHomeView: View {
                                     ZStack {
                                         Text(category)
                                             .font(Font.callout.bold())
+                                            .foregroundColor(.mainBlack)
                                     }
                                     .padding(10)
                                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -135,12 +138,16 @@ struct CatalogHomeView: View {
                     }
                 )
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 
 struct CatalogHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        CatalogHomeView()
+        NavigationView  {
+            CatalogHomeView()
+        }
         //            .preferredColorScheme(.dark)
     }
 }

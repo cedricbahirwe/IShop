@@ -110,6 +110,8 @@ struct CategoryDetailView: View {
             
             Spacer()
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 
