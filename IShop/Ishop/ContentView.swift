@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import CoreData
 
-let size = UIScreen.main.bounds.size
+public let size = UIScreen.main.bounds.size
 
 public enum OnBoardingStep: Int, CaseIterable {
     case one
@@ -23,13 +22,11 @@ extension Color {
 }
 
 struct ContentView: View {
-    
     var body: some View {
-        
-       OnBoardingView()
-        
+        NavigationView {
+            OnBoardingView()
+        }
     }
-    
 }
 
 
@@ -44,7 +41,7 @@ struct ImagePlaceHolder: View {
         Text("Image")
             .font(Font.title.weight(.heavy))
             .foregroundColor(Color.gray.opacity(0.5))
-            .frame(width: size.width-20, height: 380)
+            .frame(maxWidth: size.width*0.9, maxHeight: size.width*0.9)
             .background(Color.gray.opacity(0.2))
     }
 }
