@@ -77,7 +77,7 @@ struct CatalogHomeView: View {
                                 .font(Font.title3.bold())
                                 .opacity(0.85)
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                                ForEach(["Meals", "Juices", "Toundra", "Beverage"], id: \.self) { category in
+                                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"], id: \.self) { category in
                                     ZStack {
                                         Text(category)
                                             .font(Font.callout.bold())
