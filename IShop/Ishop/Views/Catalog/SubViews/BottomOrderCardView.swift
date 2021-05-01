@@ -15,10 +15,8 @@ struct BottomOrderCardView: View {
                 .opacity(0.1)
             
             Text("Current order")
-                .multilineTextAlignment(.center)
                 .font(Font.headline.bold())
-                .lineSpacing(4)
-                .foregroundColor(.black)
+            
             Divider()
             VStack {
                 
@@ -41,7 +39,7 @@ struct BottomOrderCardView: View {
         }
         .padding(.top, 8)
         .frame(maxWidth: .infinity)
-        .background(Color.mainBackground)
+        .background(Color(.tertiarySystemBackground))
         .cornerRadius(20)
         .shadow(radius: 20)
     }
