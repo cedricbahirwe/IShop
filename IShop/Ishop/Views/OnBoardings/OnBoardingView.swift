@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct OnBoardingView: View {
-    private struct OnBoardingModel: Identifiable {
-        var id = UUID()
-        let image: Image?
-        let title: String
-        let description: String
-    }
     
     private let onboardingSteps: [OnBoardingModel] = [
         OnBoardingModel(image: Image("shopping"), title: "Shop Everyday Products", description: "We deliver groceries, drinks, and home goods daily direct from our warehouse to you in one hour or less."),
@@ -129,37 +123,6 @@ struct OnBoardingView_Previews: PreviewProvider {
 
 
 extension OnBoardingView {
-    private struct OnboardingStep: View {
-        let step: OnBoardingModel
-        
-        var body: some View {
-            VStack(alignment: .leading) {
-                Group {
-                    if let img = step.image {
-                        img
-                            .resizable()
-                            .scaledToFill()
-                            .frame(maxWidth: size.width-30)
-                            .frame(maxHeight: 300)
-                            .clipped()
-                            .background(Color.gray.opacity(0.2))
-                        
-                    } else {
-                        ImagePlaceHolder()
-                    }
-                }
-                
-                Text(step.title)
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Text(step.description)
-                    .font(.title3)
-                    .opacity(0.85)
-            }
-            .padding(.horizontal)
-            
-        }
-    }
+   
     
 }
