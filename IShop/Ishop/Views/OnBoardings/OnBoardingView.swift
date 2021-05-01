@@ -23,7 +23,7 @@ struct OnBoardingView: View {
                 HStack(spacing: 0) {
                     ForEach(
                         onboardingSteps,
-                        content: OnboardingStep.init
+                        content: OnboardingStepView.init
                     )
                     .frame(width: geo.frame(in: .global).width)
                     
@@ -63,10 +63,7 @@ struct OnBoardingView: View {
                     Button(action: {}) {
                         Text("Start Shopping")
                             .fontWeight(.medium)
-                            .foregroundColor(.mainBackground)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 55)
-                            .background(Color.mainBlack)
+                            .largeButtonStyle()
                     }
                 }
                 .padding()
@@ -119,10 +116,4 @@ struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingView()
     }
-}
-
-
-extension OnBoardingView {
-   
-    
 }

@@ -12,9 +12,11 @@ struct OnBoardingModel: Identifiable {
     let image: Image?
     let title: String
     let description: String
+    
+    static let example = OnBoardingModel(image: Image("camera"), title: "Camera Title", description: "The best camera in our new branding")
 }
 
-struct OnboardingStep: View {
+struct OnboardingStepView: View {
     let step: OnBoardingModel
     var body: some View {
         VStack(alignment: .leading) {
@@ -41,13 +43,12 @@ struct OnboardingStep: View {
                 .font(.title3)
                 .opacity(0.85)
         }
-        .padding(.horizontal)
         
     }
 }
 
-struct OnBoardingStep_Previews: PreviewProvider {
+struct OnboardingStepView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingStep(step: OnBoardingModel(image: nil, title: "", description: ""))
+        OnboardingStepView(step: OnBoardingModel(image: nil, title: "", description: ""))
     }
 }
