@@ -10,8 +10,6 @@ import SwiftUI
 struct NotificationApprovalView: View {
     var body: some View {
         VStack {
-            
-            
             HStack {
                 Spacer()
                 Button(action: {}) {
@@ -23,8 +21,10 @@ struct NotificationApprovalView: View {
             
             OnboardingStepView(step: OnBoardingModel(image: Image("notifications"), title: "Allow Push Notifications", description: "IShop needs to send you notifications to keep you updated about discounts, coupons, etc."))
             Spacer()
-            Button(action: {}) {
-                Text("Allow Notifcations")
+            Button(action: {
+                // Present Alert and Manage States
+            }) {
+                Text("Allow")
                     .fontWeight(.medium)
                     .largeButtonStyle()
             }

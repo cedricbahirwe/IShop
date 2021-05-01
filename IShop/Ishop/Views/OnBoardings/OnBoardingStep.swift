@@ -25,8 +25,7 @@ struct OnboardingStepView: View {
                     img
                         .resizable()
                         .scaledToFill()
-                        .frame(maxWidth: size.width-30)
-                        .frame(maxHeight: 300)
+                        .frame(maxWidth: size.width*0.9, maxHeight: size.width*0.9)
                         .clipped()
                         .background(Color.gray.opacity(0.2))
                     

@@ -39,7 +39,7 @@ struct ImagePlaceHolder: View {
         Text("Image")
             .font(Font.title.weight(.heavy))
             .foregroundColor(Color.gray.opacity(0.5))
-            .frame(width: size.width-20, height: 380)
+            .frame(maxWidth: size.width*0.9, maxHeight: size.width*0.9)
             .background(Color.gray.opacity(0.2))
     }
 }
