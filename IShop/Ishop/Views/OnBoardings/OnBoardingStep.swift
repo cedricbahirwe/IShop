@@ -25,7 +25,7 @@ struct OnboardingStepView: View {
                     img
                         .resizable()
                         .scaledToFill()
-                        .frame(maxWidth: size.width*0.9, maxHeight: size.width*0.9)
+                        .frame(maxWidth: size.width*0.9, maxHeight: size.width*0.8)
                         .clipped()
                         .background(Color.gray.opacity(0.2))
                     
@@ -33,6 +33,7 @@ struct OnboardingStepView: View {
                     ImagePlaceHolder()
                 }
             }
+//            .frame(maxWidth: .infinity)
             
             Text(step.title)
                 .font(.title)
@@ -42,6 +43,7 @@ struct OnboardingStepView: View {
                 .font(.title3)
                 .opacity(0.85)
         }
+        .padding(.horizontal, 16)
         
     }
 }

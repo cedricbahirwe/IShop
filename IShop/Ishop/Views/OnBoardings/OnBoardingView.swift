@@ -9,9 +9,10 @@ import SwiftUI
 
 struct OnBoardingView: View {
     
+    @EnvironmentObject var mainObject: MainViewModel
     private let onboardingSteps: [OnBoardingModel] = [
         OnBoardingModel(image: Image("shopping"), title: "Shop Everyday Products", description: "We deliver groceries, drinks, and home goods daily direct from our warehouse to you in one hour or less."),
-        OnBoardingModel(image: Image("delivery"), title: "Get Delivery \nWhen You Need It", description: "Your time matters. IShop delivers your order directly from our fulfillment centers. We don't rely on 3rd party stores. Get your products when you want them."),
+        OnBoardingModel(image: Image("delivery"), title: "Get Delivery \nWhen You Need It", description: "Your time matters. IShop delivers your order directly from our fulfillment centers. Get your products when you want them."),
         OnBoardingModel(image: Image("fees"), title: "Save Big On Fees", description: "Pricing should not be a game. Our delivery fee is simple, and our product prices are fair. \nShop with confindence.")
     ]
     @State private var offsetX: CGFloat = .zero
@@ -60,7 +61,9 @@ struct OnBoardingView: View {
                         }
                     }
                     
-                    Button(action: {}) {
+                    Button(action: {
+                        mainObject.showNotApprView.toggle
+                    }) {
                         Text("Start Shopping")
                             .fontWeight(.medium)
                             .largeButtonStyle()
@@ -73,6 +76,11 @@ struct OnBoardingView: View {
         .animation(.default)
         .foregroundColor(.mainBlack)
         .onChange(of: selectedStep, perform: updateLayout)
+        .fullScreenCover(isPresented: $mainObject.showNotApprView) {
+            NotificationApprovalView()
+        }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
     
     private func updateTabs(with swipeValue: DragGesture.Value) {
@@ -115,5 +123,6 @@ struct OnBoardingView: View {
 struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingView()
+            .environmentObject(MainViewModel())
     }
 }

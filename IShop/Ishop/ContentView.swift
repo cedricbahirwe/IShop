@@ -23,7 +23,9 @@ extension Color {
 
 struct ContentView: View {
     var body: some View {
-        OnBoardingView()
+        NavigationView {
+            OnBoardingView()
+        }
     }
 }
 

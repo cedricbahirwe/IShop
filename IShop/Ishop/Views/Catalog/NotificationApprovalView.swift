@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct NotificationApprovalView: View {
+    @EnvironmentObject private var mainObject: MainViewModel
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    mainObject.showLocationApprovalView.toggle()
+                }) {
                     Text("Skip")
                         .foregroundColor(.mainBlack)
                     
                 }
             }
-            
+            .padding(.trailing)
             OnboardingStepView(step: OnBoardingModel(image: Image("notifications"), title: "Allow Push Notifications", description: "IShop needs to send you notifications to keep you updated about discounts, coupons, etc."))
             Spacer()
             Button(action: {
@@ -28,8 +31,8 @@ struct NotificationApprovalView: View {
                     .fontWeight(.medium)
                     .largeButtonStyle()
             }
+            .padding()
         }
-        .padding()
     }
 }
 
