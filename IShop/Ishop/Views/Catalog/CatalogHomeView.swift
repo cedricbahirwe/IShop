@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CatalogHomeView: View {
     @State private var showCard = false
-//    @State private var show = false
-//    @State private var viewState  = CGSize.zero
+    //    @State private var show = false
+    //    @State private var viewState  = CGSize.zero
     @State private var bottomState = CGSize.zero
     @State private var showFull = false
     
@@ -40,8 +40,8 @@ struct CatalogHomeView: View {
                             HStack(spacing: 12) {
                                 ForEach(0 ..< 5) { item in
                                     ZStack {
-                                       Text("Shopping is effortless, \ndelivery is now.")
-                                        .font(Font.callout.bold())
+                                        Text("Shopping is effortless, \ndelivery is now.")
+                                            .font(Font.callout.bold())
                                     }
                                     .padding(8)
                                     .frame(width: 245, height: 120, alignment: .topLeading)
@@ -58,15 +58,18 @@ struct CatalogHomeView: View {
                                 .opacity(0.85)
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                                 ForEach(["Health", "Drinks", "Snacks & Quick Meals", "Grocery"], id: \.self) { category in
-                                    ZStack {
-                                        Text(category)
-                                            .font(Font.callout.bold())
+                                    NavigationLink(
+                                        destination: CategoryDetailView()) {
+                                        ZStack {
+                                            Text(category)
+                                                .font(Font.callout.bold())
+                                        }
+                                        .padding(10)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .frame(height: size.width/2.5, alignment: .top)
+                                        .background(Color.gray.opacity(0.1))
+                                        .cornerRadius(10)
                                     }
-                                    .padding(10)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .frame(height: size.width/2.5, alignment: .top)
-                                    .background(Color.gray.opacity(0.1))
-                                    .cornerRadius(10)
                                 }
                             }
                         }
@@ -102,8 +105,9 @@ struct CatalogHomeView: View {
             .disabled(showCard || bottomState != .zero)
             .animation(Animation.default.delay(0.1).speed(2))
             
-        BottomOrderCardView()
-            .offset(x: 0, y: showCard ? 360 : size.height-160)
+            BottomOrderCardView()
+                // Remplace  1000 with `size.height-160` to see the simulated effect
+                .offset(x: 0, y: showCard ? 360 : 1000)
                 .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
                 .offset(y: bottomState.height)
                 .gesture(
@@ -137,6 +141,6 @@ struct CatalogHomeView: View {
 struct CatalogHomeView_Previews: PreviewProvider {
     static var previews: some View {
         CatalogHomeView()
-//            .preferredColorScheme(.dark)
+        //            .preferredColorScheme(.dark)
     }
 }
