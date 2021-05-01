@@ -20,6 +20,7 @@
 		82EC596A2635EBDD009E5801 /* IshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59692635EBDD009E5801 /* IshopUITests.swift */; };
 		82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC597A2635EBEB009E5801 /* CoreDataView.swift */; };
 		82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59802635ED0C009E5801 /* SpashScreenView.swift */; };
+		82F195F3263E09A30079FA8B /* BottomOrderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */; };
 		82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */; };
 		82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */; };
 		82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */; };
@@ -63,6 +64,7 @@
 		82EC596B2635EBDD009E5801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82EC597A2635EBEB009E5801 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		82EC59802635ED0C009E5801 /* SpashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashScreenView.swift; sourceTree = "<group>"; };
+		82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOrderCardView.swift; sourceTree = "<group>"; };
 		82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApprovalView.swift; sourceTree = "<group>"; };
 		82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAddressView.swift; sourceTree = "<group>"; };
 		82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHomeView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */,
 				82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */,
 				82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */,
+				82F195F1263E09990079FA8B /* SubViews */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 			);
 			path = Catalog;
@@ -185,6 +188,14 @@
 				82E8F2C8263D709100ED2375 /* OnBoardings */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		82F195F1263E09990079FA8B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 			files = (
 				82E8F2CB263D70F300ED2375 /* NotificationApprovalView.swift in Sources */,
 				82EC59512635EBDD009E5801 /* Persistence.swift in Sources */,
+				82F195F3263E09A30079FA8B /* BottomOrderCardView.swift in Sources */,
 				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
