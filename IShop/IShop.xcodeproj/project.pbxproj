@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82E8F2CB263D70F300ED2375 /* NotificationApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */; };
 		82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationApprovalView.swift; sourceTree = "<group>"; };
 		82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStep.swift; sourceTree = "<group>"; };
@@ -98,9 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8253090A2686289000272F28 /* OptionalViews */ = {
+			isa = PBXGroup;
+			children = (
+				8253090B268628B500272F28 /* AboutUsView.swift */,
+			);
+			path = OptionalViews;
+			sourceTree = "<group>";
+		};
 		82E8F2C8263D709100ED2375 /* OnBoardings */ = {
 			isa = PBXGroup;
 			children = (
+				8253090A2686289000272F28 /* OptionalViews */,
 				826AA1EE2636008E001EFDBB /* OnBoardingView.swift */,
 				82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */,
 			);
@@ -279,7 +290,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "Ishop" */;
+			buildConfigurationList = 82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "IShop" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -340,6 +351,7 @@
 				82FC1237263DE9A400F73F4D /* MainViewModel.swift in Sources */,
 				82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */,
 				82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */,
+				8253090C268628B500272F28 /* AboutUsView.swift in Sources */,
 				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
 				82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */,
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
@@ -623,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "Ishop" */ = {
+		82EC593F2635EBDC009E5801 /* Build configuration list for PBXProject "IShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82EC596C2635EBDD009E5801 /* Debug */,
