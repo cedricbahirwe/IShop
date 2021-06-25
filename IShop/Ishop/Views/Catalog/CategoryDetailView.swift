@@ -31,7 +31,7 @@ struct CategoryDetailView: View {
     ]
     var body: some View {
         VStack {
-            TopNavigationHeaderView()
+            TopNavigationHeaderView(title: "Drinks")
             
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -104,8 +104,9 @@ struct CategoryDetailView_Previews: PreviewProvider {
 }
 
 struct TopNavigationHeaderView: View {
-    @Environment(\.presentationMode) private var presentationMode
+    let title: String
     var didPop: (() -> ())? = nil
+    @Environment(\.presentationMode) private var presentationMode
     var body: some View {
         ZStack(alignment: .leading) {
             
@@ -126,7 +127,7 @@ struct TopNavigationHeaderView: View {
             }
             .foregroundColor(.black)
             
-            Text("Drinks")
+            Text(title)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
             

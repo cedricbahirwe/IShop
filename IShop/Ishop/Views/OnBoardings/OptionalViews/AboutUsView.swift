@@ -9,7 +9,14 @@ import SwiftUI
 
 struct AboutUsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TopNavigationHeaderView(title: "About IShop")
+            RoundedRectangle()
+//                .fr
+//            TopNavigationHeaderView(didPop: <#T##(() -> ())?##(() -> ())?##() -> ()#>)
+            Text("Hello, World!")
+//            Spacer()
+        }
     }
 }
 
