@@ -8,6 +8,16 @@
 import SwiftUI
 
 
+struct GrayField: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(height: 50)
+            .padding(.leading, 10)
+            .background(Color.lightGray)
+            .cornerRadius(10)
+    }
+}
+
 struct DarkMode: ViewModifier {
     func body(content: Content) -> some View {
         content.preferredColorScheme(.dark)
@@ -25,8 +35,13 @@ struct RoundedCorner: Shape {
     }
 }
 
+
 extension View {
-    func applyDark() -> some View {
+    public func grayField() -> some View {
+        ModifiedContent(content: self, modifier: GrayField())
+    }
+    
+    public func applyDark() -> some View {
         ModifiedContent(content: self, modifier: DarkMode())
     }
     

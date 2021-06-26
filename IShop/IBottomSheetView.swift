@@ -9,6 +9,7 @@ import SwiftUI
 
 struct IBottomSheetView<Content>: View where Content: View {
     var canReachTop: Bool = false
+    var initialOffsetY: CGFloat = 360
     @Binding var showCard: Bool // = false
     @State private var showFull:  Bool = false
     var content: () -> Content
@@ -18,6 +19,7 @@ struct IBottomSheetView<Content>: View where Content: View {
     var body: some View {
         VStack {
             content()
+            Spacer()
             
         }
         .frame(maxWidth: .infinity)
@@ -25,7 +27,7 @@ struct IBottomSheetView<Content>: View where Content: View {
         .cornerRadius(20, corners: [.topLeft, .topRight])
         .shadow(radius: 20)
         // Remplace  1000 with `size.height-160` to see the simulated effect
-        .offset(x: 0, y: showCard ? 360 : 1000)
+        .offset(x: 0, y: showCard ? initialOffsetY : 1000)
         .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
         .offset(y: bottomState.height)
         .gesture(

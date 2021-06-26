@@ -29,24 +29,14 @@ struct AccountDetails: View {
                 Text("Almost done, next lets add:")
                 HStack {
                     TextField("First name", text: .constant(""))
-                        .frame(height: 50)
-                        .padding(.leading, 10)
-                        .background(Color.lightGray)
-                        .cornerRadius(10)
+                        .grayField()
                     
                     TextField("Last name", text: .constant(""))
-                        .frame(height: 50)
-                        .padding(.leading, 10)
-                        .background(Color.lightGray)
-                        .cornerRadius(10)
+                        .grayField()
                 }
                 
                 TextField("Your email", text: .constant(""))
-                    .frame(height: 50)
-                    .padding(.leading, 10)
-                    .background(Color.lightGray)
-                    .cornerRadius(10)
-                
+                    .grayField()
                 
                 HStack(spacing: 0) {
                     if showPassword {
@@ -58,19 +48,12 @@ struct AccountDetails: View {
                         .padding()
                         .onTapGesture { }
                 }
-                .frame(height: 50)
-                .padding(.leading, 10)
-                .background(Color.lightGray)
-                .cornerRadius(10)
+                .grayField()
             }
             .padding(10)
             Divider()
             
             LoadingButton(title: "Continue", state: State) {
-                withAnimation {
-                    State = State == .initial ? .loading : State == .loading ? .finished : .initial
-                    
-                }
             }
             .padding(10)
             
@@ -83,5 +66,4 @@ struct AccountDetails_Previews: PreviewProvider {
         AccountDetails()
     }
 }
-
 

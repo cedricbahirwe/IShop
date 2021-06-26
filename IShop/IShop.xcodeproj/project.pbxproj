@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
+		82360B6C268758F400C6EA95 /* CardPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B6B268758F400C6EA95 /* CardPaymentview.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
+		82360B6B268758F400C6EA95 /* CardPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentview.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDefaultSearchView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82360B6A268758DC00C6EA95 /* Accounting */ = {
+			isa = PBXGroup;
+			children = (
+				82D9CBB82686EA6F005FFB62 /* AccountDetails.swift */,
+				82360B6B268758F400C6EA95 /* CardPaymentview.swift */,
+			);
+			path = Accounting;
+			sourceTree = "<group>";
+		};
 		8253090A2686289000272F28 /* OptionalViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				82D9CB8C2686DA60005FFB62 /* CartView.swift */,
-				82D9CBB82686EA6F005FFB62 /* AccountDetails.swift */,
+				82360B6A268758DC00C6EA95 /* Accounting */,
 			);
 			path = Carts;
 			sourceTree = "<group>";
@@ -425,6 +436,7 @@
 				82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */,
 				82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */,
 				82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */,
+				82360B6C268758F400C6EA95 /* CardPaymentview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

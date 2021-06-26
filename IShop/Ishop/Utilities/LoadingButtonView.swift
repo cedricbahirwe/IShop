@@ -13,7 +13,7 @@ struct LoadingButton: View {
         case initial, loading, finished
     }
     let title: String
-    
+    var isActive: Bool = true // Will be used for coloring
     var state: ButtonState = .initial
     let action: () -> ()
     @State private var animate: Bool = false
