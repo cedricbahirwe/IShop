@@ -7,14 +7,15 @@
 
 import SwiftUI
 
+// TODO: Card Service Detection
 struct CardPaymentview: View {
     var body: some View {
-        VStack {
+        VStack{
             Text("Add payment card details")
                 .font(Font.headline.bold())
                 .padding(10)
             Divider()
-            VStack {
+            VStack (spacing: 10) {
                 TextField("Cardholder Name", text: .constant(""))
                     .grayField()
                 HStack(spacing: 2) {
@@ -29,7 +30,7 @@ struct CardPaymentview: View {
                         .grayField()
                     HStack {
                         TextField("CVC", text: .constant(""))
-                        Image(systemName: "questionmark.circle")
+                        Image(systemName: "creditcard.fill")
                     }
                     .grayField()
 
