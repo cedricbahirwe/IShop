@@ -15,6 +15,8 @@
 		82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB982686DDCE005FFB62 /* IBottomSheetView.swift */; };
 		82D9CB9E2686DF74005FFB62 /* TopNavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB9D2686DF74005FFB62 /* TopNavigationHeaderView.swift */; };
 		82D9CBA32686DFA7005FFB62 /* Image_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CBA22686DFA7005FFB62 /* Image_Extensions.swift */; };
+		82D9CBB92686EA6F005FFB62 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CBB82686EA6F005FFB62 /* AccountDetails.swift */; };
+		82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CBBD2686EB13005FFB62 /* Color_Extensions.swift */; };
 		82E8F2CB263D70F300ED2375 /* NotificationApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */; };
 		82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */; };
 		82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59472635EBDC009E5801 /* IshopApp.swift */; };
@@ -61,6 +63,8 @@
 		82D9CB982686DDCE005FFB62 /* IBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBottomSheetView.swift; sourceTree = "<group>"; };
 		82D9CB9D2686DF74005FFB62 /* TopNavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationHeaderView.swift; sourceTree = "<group>"; };
 		82D9CBA22686DFA7005FFB62 /* Image_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Extensions.swift; sourceTree = "<group>"; };
+		82D9CBB82686EA6F005FFB62 /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
+		82D9CBBD2686EB13005FFB62 /* Color_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Extensions.swift; sourceTree = "<group>"; };
 		82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationApprovalView.swift; sourceTree = "<group>"; };
 		82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStep.swift; sourceTree = "<group>"; };
 		82EC59442635EBDC009E5801 /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				82D9CB832686D9E8005FFB62 /* View+Extensions.swift */,
+				82D9CBBD2686EB13005FFB62 /* Color_Extensions.swift */,
 				82D9CBA22686DFA7005FFB62 /* Image_Extensions.swift */,
 			);
 			path = Extensions;
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				82D9CB8C2686DA60005FFB62 /* CartView.swift */,
+				82D9CBB82686EA6F005FFB62 /* AccountDetails.swift */,
 			);
 			path = Carts;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
+				82D9CBB92686EA6F005FFB62 /* AccountDetails.swift in Sources */,
 				82FC1237263DE9A400F73F4D /* MainViewModel.swift in Sources */,
 				82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */,
 				82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */,
@@ -413,6 +420,7 @@
 				82D9CB8D2686DA60005FFB62 /* CartView.swift in Sources */,
 				82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */,
 				82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */,
+				82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
