@@ -20,34 +20,44 @@ struct BottomOrderCardView: View {
             Divider()
             VStack {
                 
-                HStack {
-                    Image(systemName: "cart.fill")
-                    Text("3 products")
-                    Spacer()
-                    
-                    Text("$45.5")
-                }
-                .font(Font.callout.weight(.semibold))
-                .padding()
-                .foregroundColor(.mainBackground)
-                .background(Color.mainDark)
-                .cornerRadius(8)
+                CheckoutBannerView(icon: "cart.fill",
+                                   title: "3 products",
+                                   price: "$45.5")
             }
             .padding(.horizontal, 10)
-
+            
             Spacer( )
         }
         .padding(.top, 8)
-        .frame(maxWidth: .infinity)
-        .background(Color(.tertiarySystemBackground))
-        .cornerRadius(20)
-        .shadow(radius: 20)
     }
 }
 
 
 struct BottomOrderCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomOrderCardView()
+        IBottomSheetView(showCard: .constant(true)) {
+            BottomOrderCardView()
+        }
+    }
+}
+
+
+struct CheckoutBannerView: View {
+    let icon: String
+    let title: String
+    let price: String
+    var body: some View {
+        HStack {
+            Image(systemName:icon)
+            Text(title)
+            Spacer()
+            
+            Text(price)
+        }
+        .font(Font.callout.weight(.semibold))
+        .padding()
+        .foregroundColor(.mainBackground)
+        .background(Color.mainDark)
+        .cornerRadius(8)
     }
 }

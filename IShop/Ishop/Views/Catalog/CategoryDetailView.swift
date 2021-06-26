@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct Drink: Identifiable {
     var id = UUID()
     var name: String
@@ -20,15 +22,17 @@ struct Drink: Identifiable {
 //        formatter.currencyCode = "USD"
         return formatter.string(from: NSNumber(value: price)) ?? "$0"
     }
-}
-struct CategoryDetailView: View {
     
-    let drinks: [Drink] = [
+    public static let drinks: [Drink] = [
         Drink(name: "Beer", shortDescription: "Single-serve breakfast...", price: 1.65),
         Drink(name: "Baccardi", shortDescription: "Bubblemint, 14 pieces", price: 1.55),
         Drink(name: "Vodka", shortDescription: "Single-serve breakfast...", price: 1.65),
         Drink(name: "Martini", shortDescription: "m&m milk chocolate 1,69-serve", price: 2.00),
     ]
+}
+struct CategoryDetailView: View {
+    
+    
     var body: some View {
         VStack {
             TopNavigationHeaderView(title: "Drinks")
@@ -61,7 +65,7 @@ struct CategoryDetailView: View {
                     }
                     
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 25) {
-                        ForEach(drinks) { drink in
+                        ForEach(Drink.drinks) { drink in
                             VStack {
                                 Color.gray.opacity(0.1)
                                     .frame(height: size.width/2.5)
@@ -78,11 +82,11 @@ struct CategoryDetailView: View {
                                     Spacer()
                                     Text(drink.formattedPrice)
                                 }
-                                .padding(10)
                                 .font(.caption)
+                                .foregroundColor(.secondary)
+                                .padding(10)
                                 .background(Color.gray.opacity(0.1))
                                 .cornerRadius(8)
-                                .foregroundColor(.secondary)
                             }
                         }
                         
@@ -103,35 +107,3 @@ struct CategoryDetailView_Previews: PreviewProvider {
     }
 }
 
-struct TopNavigationHeaderView: View {
-    let title: String
-    var didPop: (() -> ())? = nil
-    @Environment(\.presentationMode) private var presentationMode
-    var body: some View {
-        ZStack(alignment: .leading) {
-            
-            Button(action: {
-                if let action = didPop {
-                    action()
-                } else {
-                    presentationMode.wrappedValue.dismiss()
-                }
-            }){
-                HStack(spacing: 0) {
-                    Image(systemName: "chevron.left")
-                        .imageScale(.large)
-                        .font(Font.body.bold())
-                    Text("Back")
-                        .fontWeight(.regular)
-                }
-            }
-            .foregroundColor(.black)
-            
-            Text(title)
-                .fontWeight(.semibold)
-                .frame(maxWidth: .infinity)
-            
-        }
-        .padding(8)
-    }
-}
