@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AccountDetails: View {
+    @State private var showPassword: Bool = false
+    @State private var password: String = ""
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -44,29 +46,33 @@ struct AccountDetails: View {
                     .background(Color.lightGray)
                     .cornerRadius(10)
                 
-                TextField("Password", text: .constant(""))
-                    .frame(height: 50)
-                    .padding(.leading, 10)
-                    .background(Color.lightGray)
-                    .cornerRadius(10)
-                    .overlay(
-                        Image(systemName: "eye")
-                            .padding()
-                            .frame(height: 50)
-                        , alignment: .trailing
-                    )
+                
+                HStack(spacing: 0) {
+                    if showPassword {
+                        TextField("Password", text: $password)
+                    } else {
+                        SecureField("Password", text: $password)
+                    }
+                    Image(systemName: showPassword ? "eye.slash" : "eye")
+                        .padding()
+                        .onTapGesture { }
+                }
+                .frame(height: 50)
+                .padding(.leading, 10)
+                .background(Color.lightGray)
+                .cornerRadius(10)
             }
             .padding(10)
             Divider()
             
             Button(action: {}, label: {
                 Text("Continue")
-                .font(Font.callout.weight(.semibold))
-                .padding()
-                .foregroundColor(.mainBackground)
-                .frame(maxWidth: .infinity)
-                .background(Color.mainDark)
-                .cornerRadius(8)
+                    .font(Font.callout.weight(.semibold))
+                    .padding()
+                    .foregroundColor(.mainBackground)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.mainDark)
+                    .cornerRadius(8)
             })
             .padding(10)
         }
