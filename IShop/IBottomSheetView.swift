@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IBottomSheetView<Content>: View where Content: View {
-    
+    var canReachTop: Bool = false
     @Binding var showCard: Bool // = false
     @State private var showFull:  Bool = false
     var content: () -> Content
@@ -22,7 +22,7 @@ struct IBottomSheetView<Content>: View where Content: View {
         }
         .frame(maxWidth: .infinity)
         .background(Color(.tertiarySystemBackground))
-        .cornerRadius(20)
+        .cornerRadius(20, corners: [.topLeft, .topRight])
         .shadow(radius: 20)
         // Remplace  1000 with `size.height-160` to see the simulated effect
         .offset(x: 0, y: showCard ? 360 : 1000)
@@ -43,7 +43,7 @@ struct IBottomSheetView<Content>: View where Content: View {
                     showCard = false
                 }
                 if (bottomState.height < -100 && !showFull) || (bottomState.height < -250 && showFull) {
-                    bottomState.height = -300
+                    bottomState.height = canReachTop ? -360 : -300
                     showFull = true
                 } else {
                     bottomState = .zero

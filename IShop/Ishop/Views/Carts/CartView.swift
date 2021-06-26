@@ -22,7 +22,7 @@ struct CartView: View {
                     //                    .imageScale(.large)
                     .font(Font.body.bold())
             }
-            .padding(8)
+            .padding()
             Divider()
             VStack(alignment: .leading) {
                 cartItemsView
@@ -115,6 +115,9 @@ struct CartView: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView()
+        
+        IBottomSheetView(canReachTop: true, showCard: .constant(true)) {
+            CartView()
+        }
     }
 }
