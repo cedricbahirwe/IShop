@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */; };
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		82360B6C268758F400C6EA95 /* CardPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B6B268758F400C6EA95 /* CardPaymentview.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordBottomSheet.swift; sourceTree = "<group>"; };
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		82360B6B268758F400C6EA95 /* CardPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentview.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
@@ -143,14 +145,15 @@
 			path = OptionalViews;
 			sourceTree = "<group>";
 		};
-		82B5D8462687603500432A00 /* Authentication */ = {
+		82B5D8462687603500432A00 /* BottomSheet Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */,
 				82F4607D268769120009AE25 /* CodeVerificationBottomSheet.swift */,
 				82F46078268768EA0009AE25 /* CreateAccountBottomSheet.swift */,
+				8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */,
 			);
-			path = Authentication;
+			path = "BottomSheet Authentication";
 			sourceTree = "<group>";
 		};
 		82D9CB792686D7E3005FFB62 /* New Group */ = {
@@ -283,7 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				82EC59802635ED0C009E5801 /* SpashScreenView.swift */,
-				82B5D8462687603500432A00 /* Authentication */,
+				82B5D8462687603500432A00 /* BottomSheet Authentication */,
 				82D9CB8B2686DA55005FFB62 /* Carts */,
 				82E8F2C9263D70A200ED2375 /* Catalog */,
 				82E8F2C8263D709100ED2375 /* OnBoardings */,
@@ -434,6 +437,7 @@
 				82D9CBA32686DFA7005FFB62 /* Image_Extensions.swift in Sources */,
 				82B5D8502687606300432A00 /* AuthorizationWaysBottomSheet.swift in Sources */,
 				82F4607E268769120009AE25 /* CodeVerificationBottomSheet.swift in Sources */,
+				8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */,
 				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				82F46079268768EA0009AE25 /* CreateAccountBottomSheet.swift in Sources */,
