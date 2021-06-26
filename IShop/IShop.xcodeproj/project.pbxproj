@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
+		82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */; };
+		82D9CB842686D9E8005FFB62 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB832686D9E8005FFB62 /* View+Extensions.swift */; };
 		82E8F2CB263D70F300ED2375 /* NotificationApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */; };
 		82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */; };
 		82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59472635EBDC009E5801 /* IshopApp.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDefaultSearchView.swift; sourceTree = "<group>"; };
+		82D9CB832686D9E8005FFB62 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationApprovalView.swift; sourceTree = "<group>"; };
 		82E8F2D5263D724B00ED2375 /* OnBoardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStep.swift; sourceTree = "<group>"; };
 		82EC59442635EBDC009E5801 /* Ishop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ishop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,21 @@
 			path = OptionalViews;
 			sourceTree = "<group>";
 		};
+		82D9CB792686D7E3005FFB62 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		82D9CB822686D9D8005FFB62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82D9CB832686D9E8005FFB62 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		82E8F2C8263D709100ED2375 /* OnBoardings */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +146,8 @@
 				82F195F1263E09990079FA8B /* SubViews */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 				82F195FA263E114F0079FA8B /* CategoryDetailView.swift */,
+				82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */,
+				82D9CB792686D7E3005FFB62 /* New Group */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -159,6 +180,7 @@
 				82FC1236263DE9A400F73F4D /* MainViewModel.swift */,
 				82EC597F2635ED01009E5801 /* Views */,
 				82EC597A2635EBEB009E5801 /* CoreDataView.swift */,
+				82D9CB822686D9D8005FFB62 /* Extensions */,
 				82EC594B2635EBDD009E5801 /* Assets.xcassets */,
 				82EC59502635EBDD009E5801 /* Persistence.swift */,
 				82EC59552635EBDD009E5801 /* Info.plist */,
@@ -351,11 +373,13 @@
 				82FC1237263DE9A400F73F4D /* MainViewModel.swift in Sources */,
 				82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */,
 				82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */,
+				82D9CB842686D9E8005FFB62 /* View+Extensions.swift in Sources */,
 				8253090C268628B500272F28 /* AboutUsView.swift in Sources */,
 				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
 				82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */,
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
 				82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */,
+				82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */,
 				82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
