@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDefaultSearchView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				82D9CB9D2686DF74005FFB62 /* TopNavigationHeaderView.swift */,
+				82360B622687568D00C6EA95 /* LoadingButtonView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
+				82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */,
 				82D9CBB92686EA6F005FFB62 /* AccountDetails.swift in Sources */,
 				82FC1237263DE9A400F73F4D /* MainViewModel.swift in Sources */,
 				82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */,
