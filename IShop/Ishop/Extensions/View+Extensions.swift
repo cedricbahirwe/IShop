@@ -12,7 +12,7 @@ struct GrayField: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(height: 50)
-            .padding(.leading, 10)
+            .padding(.horizontal, 10)
             .background(Color.lightGray)
             .cornerRadius(10)
     }

@@ -17,7 +17,9 @@ struct CardPaymentview: View {
             VStack {
                 TextField("Cardholder Name", text: .constant(""))
                     .grayField()
-                HStack {
+                HStack(spacing: 2) {
+                    Image(systemName: "creditcard.fill")
+                        .foregroundColor(.gray)
                     TextField("Placeholder", text: .constant(""))
                 }
                 .grayField()
@@ -25,8 +27,12 @@ struct CardPaymentview: View {
                 HStack {
                     TextField("YY//MM", text: .constant(""))
                         .grayField()
-                    TextField("CVC", text: .constant(""))
-                        .grayField()
+                    HStack {
+                        TextField("CVC", text: .constant(""))
+                        Image(systemName: "questionmark.circle")
+                    }
+                    .grayField()
+
                 }
             }
             .padding(10)
