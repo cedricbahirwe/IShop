@@ -22,7 +22,8 @@ struct CartView: View {
                     //                    .imageScale(.large)
                     .font(Font.body.bold())
             }
-            .padding()
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
             Divider()
             VStack(alignment: .leading) {
                 cartItemsView

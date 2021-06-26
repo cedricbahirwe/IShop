@@ -11,6 +11,7 @@ struct IBottomSheetView<Content>: View where Content: View {
     var canReachTop: Bool = false
     var initialOffsetY: CGFloat = 360
     @Binding var showCard: Bool // = false
+    private let isDraggeable: Bool = true // Will be used for gesture
     @State private var showFull:  Bool = false
     var content: () -> Content
     
