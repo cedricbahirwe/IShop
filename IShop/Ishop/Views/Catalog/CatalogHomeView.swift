@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CatalogHomeView: View {
     @State private var showCard = false
-    //    @State private var show = false
-    //    @State private var viewState  = CGSize.zero
     @State private var bottomState = CGSize.zero
     @State private var showFull = false
     
@@ -29,7 +27,12 @@ struct CatalogHomeView: View {
                         .onTapGesture {
                             showCard = true
                         }
-                    Image(systemName: "magnifyingglass")
+                    NavigationLink(
+                        destination: CatalogDefaultSearchView()){
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.primary)
+                        }
+                   
                     
                 }
                 .padding()

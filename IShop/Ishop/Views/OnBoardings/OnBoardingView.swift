@@ -33,7 +33,6 @@ struct OnBoardingView: View {
                     .frame(width: geo.frame(in: .global).width)
                     
                 }
-//                .background(Color.red.edgesIgnoringSafeArea(.top))
                 .offset(x: offsetX)
                 .highPriorityGesture(
                     DragGesture()
