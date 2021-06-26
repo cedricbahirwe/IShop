@@ -25,7 +25,7 @@ struct AuthorizationWaysBottomSheet: View {
                         .foregroundColor(.mainBackground)
                         .frame(maxWidth: .infinity)
                         .background(Color.mainDark)
-                        .cornerRadius(10)
+                        .cornerRadius(8)
                 })
                 
                 Button(action: {

@@ -12,7 +12,6 @@
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82B5D8502687606300432A00 /* AuthorizationWaysBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */; };
-		82B5D858268761AC00432A00 /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5D857268761AC00432A00 /* CodeVerificationView.swift */; };
 		82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */; };
 		82D9CB842686D9E8005FFB62 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB832686D9E8005FFB62 /* View+Extensions.swift */; };
 		82D9CB8D2686DA60005FFB62 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CB8C2686DA60005FFB62 /* CartView.swift */; };
@@ -35,6 +34,8 @@
 		82EC59812635ED0C009E5801 /* SpashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59802635ED0C009E5801 /* SpashScreenView.swift */; };
 		82F195F3263E09A30079FA8B /* BottomOrderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */; };
 		82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F195FA263E114F0079FA8B /* CategoryDetailView.swift */; };
+		82F46079268768EA0009AE25 /* CreateAccountBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F46078268768EA0009AE25 /* CreateAccountBottomSheet.swift */; };
+		82F4607E268769120009AE25 /* CodeVerificationBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4607D268769120009AE25 /* CodeVerificationBottomSheet.swift */; };
 		82FC1228263DDDB400F73F4D /* LocationApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */; };
 		82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */; };
 		82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */; };
@@ -64,7 +65,6 @@
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationWaysBottomSheet.swift; sourceTree = "<group>"; };
-		82B5D857268761AC00432A00 /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDefaultSearchView.swift; sourceTree = "<group>"; };
 		82D9CB832686D9E8005FFB62 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		82D9CB8C2686DA60005FFB62 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
@@ -93,6 +93,8 @@
 		82EC59802635ED0C009E5801 /* SpashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashScreenView.swift; sourceTree = "<group>"; };
 		82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOrderCardView.swift; sourceTree = "<group>"; };
 		82F195FA263E114F0079FA8B /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		82F46078268768EA0009AE25 /* CreateAccountBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountBottomSheet.swift; sourceTree = "<group>"; };
+		82F4607D268769120009AE25 /* CodeVerificationBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationBottomSheet.swift; sourceTree = "<group>"; };
 		82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApprovalView.swift; sourceTree = "<group>"; };
 		82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAddressView.swift; sourceTree = "<group>"; };
 		82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogHomeView.swift; sourceTree = "<group>"; };
@@ -145,7 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */,
-				82B5D857268761AC00432A00 /* CodeVerificationView.swift */,
+				82F4607D268769120009AE25 /* CodeVerificationBottomSheet.swift */,
+				82F46078268768EA0009AE25 /* CreateAccountBottomSheet.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -427,12 +430,13 @@
 			files = (
 				82E8F2CB263D70F300ED2375 /* NotificationApprovalView.swift in Sources */,
 				82EC59512635EBDD009E5801 /* Persistence.swift in Sources */,
-				82B5D858268761AC00432A00 /* CodeVerificationView.swift in Sources */,
 				82F195F3263E09A30079FA8B /* BottomOrderCardView.swift in Sources */,
 				82D9CBA32686DFA7005FFB62 /* Image_Extensions.swift in Sources */,
 				82B5D8502687606300432A00 /* AuthorizationWaysBottomSheet.swift in Sources */,
+				82F4607E268769120009AE25 /* CodeVerificationBottomSheet.swift in Sources */,
 				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
+				82F46079268768EA0009AE25 /* CreateAccountBottomSheet.swift in Sources */,
 				82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
 				82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */,

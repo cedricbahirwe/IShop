@@ -1,5 +1,5 @@
 //
-//  CodeVerificationView.swift
+//  CodeVerificationBottomSheet.swift
 //  Ishop
 //
 //  Created by Cédric Bahirwe on 26/06/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CodeVerificationView: View {
+struct CodeVerificationBottomSheet: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -29,33 +29,35 @@ struct CodeVerificationView: View {
                         .font(.callout)
                     
                     TextField("····", text: .constant(""))
-                    Image(systemName: "timelapse")
-                    
+                    ProgressView()
                 }
                 .padding(10)
                 .background(Color.lightGray)
                 .cornerRadius(8)
                 
                 Group {
-                // Will show reamining time before available options
-                Text("Code sent: New code will be available in 29...")
-                    .foregroundColor(.gray)
-                // Will be used when time elapse and code is not entered
-                HStack {
-                    Text("Didn't get the code?")
+                    Text("Code verified")
+                    // Will show reamining time before available options
+                    Text("Code sent: New code will be available in 29...")
+                    // Will be used when time elapse and code is not entered
+                    HStack {
+                        Text("Didn't get the code?")
+                            .foregroundColor(.gray)
+                        
+                        Text("Invalid code.") // Used for invalid code
+                            .foregroundColor(.red)
+                        Button("Resend", action: {})
+                            .foregroundColor(.accentColor)
+                        
+                    }
+                    
+                    Text("We sent new code. Re-sending the code will be available in 24...")
                         .foregroundColor(.gray)
-                    
-                    Text("Invalid code.") // Used for invalid code
-                        .foregroundColor(.red)
-                    Button("Resend", action: {})
-                    
-                }
-                
-                Text("We sent new code. Re-sending the code will be available in 24...")
-                    .foregroundColor(.gray)
                 }
                 .font(.caption)
+                .foregroundColor(.gray)
 
+                
             }
             .padding(10)
             
@@ -63,10 +65,10 @@ struct CodeVerificationView: View {
     }
 }
 
-struct CodeVerificationView_Previews: PreviewProvider {
+struct CodeVerificationBottomSheet_Previews: PreviewProvider {
     static var previews: some View {
         IBottomSheetView(initialOffsetY: 380, showCard: .constant(true)) {
-            CodeVerificationView()
+            CodeVerificationBottomSheet()
         }
     }
 }
