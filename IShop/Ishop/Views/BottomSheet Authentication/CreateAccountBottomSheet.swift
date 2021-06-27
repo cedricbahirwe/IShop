@@ -10,18 +10,7 @@ import SwiftUI
 struct CreateAccountBottomSheet: View {
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .font(Font.body.bold())
-                Spacer()
-                Text("Create an account")
-                    .font(Font.headline.bold())
-                Spacer()
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 12)
-            Divider()
+            BottomSheetHeader("Create an account", didPressBack:  { })
             VStack(alignment: .leading) {
                 Text("Enter phone number:")
                 HStack {

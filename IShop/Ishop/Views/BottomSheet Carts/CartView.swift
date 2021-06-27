@@ -10,21 +10,14 @@ import SwiftUI
 struct CartView: View {
     var body: some View {
         VStack {
-            HStack {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .font(Font.body.bold())
-                Spacer()
-                Text("Cart")
-                    .font(Font.headline.bold())
-                Spacer()
-                Image(systemName: "trash")
-                    //                    .imageScale(.large)
-                    .font(Font.body.bold())
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 10)
-            Divider()
+            BottomSheetHeader("Cart", didPressBack:  { })
+                .overlay(
+                    Image(systemName: "trash")
+                        .font(Font.body.bold())
+                        .padding(.trailing, 14)
+
+                    , alignment: .trailing
+                )
             VStack(alignment: .leading) {
                 cartItemsView
                 

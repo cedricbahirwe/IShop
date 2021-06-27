@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CatalogDefaultSearchView: View {
+    @Environment(\.presentationMode) private  var presentationMode
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -20,10 +21,14 @@ struct CatalogDefaultSearchView: View {
                     
                 }
                 .padding(6)
-                .background(Color(.tertiarySystemGroupedBackground))
+                .background(
+                    Color(.tertiarySystemGroupedBackground)
+                )
                 .cornerRadius(8)
-                Button("Cancel") { }
-                    .foregroundColor(.primary)
+                Button("Cancel") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+                .foregroundColor(.primary)
                 
             }
             .padding([.horizontal, .top])
@@ -38,6 +43,8 @@ struct CatalogDefaultSearchView: View {
                 
             }
         }
+        .navigationBarHidden(true)
+        
     }
     
 }

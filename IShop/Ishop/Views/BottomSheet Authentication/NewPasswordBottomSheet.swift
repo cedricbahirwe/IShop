@@ -10,18 +10,7 @@ import SwiftUI
 struct NewPasswordBottomSheet: View {
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .font(Font.body.bold())
-                Spacer()
-                Text("Create an account")
-                    .font(Font.headline.bold())
-                Spacer()
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 12)
-            Divider()
+            BottomSheetHeader("Create New password", didPressBack:  { })
             VStack(alignment: .leading) {
                 Text("Enter phone number:")
                 TextField("Enter your password", text: .constant(""))
