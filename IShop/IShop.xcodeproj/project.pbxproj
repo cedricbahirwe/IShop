@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8218D12F2689044000A95151 /* AgeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218D12E2689044000A95151 /* AgeVerificationView.swift */; };
 		8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */; };
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517882688E44F00C3099A /* BottomSheetHeader.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8218D12E2689044000A95151 /* AgeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerificationView.swift; sourceTree = "<group>"; };
 		8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordBottomSheet.swift; sourceTree = "<group>"; };
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		824517882688E44F00C3099A /* BottomSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeader.swift; sourceTree = "<group>"; };
@@ -161,6 +163,15 @@
 			path = "BottomSheet SignIn";
 			sourceTree = "<group>";
 		};
+		824517AD2689020A00C3099A /* Notifications Agreement Views */ = {
+			isa = PBXGroup;
+			children = (
+				82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */,
+				82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */,
+			);
+			path = "Notifications Agreement Views";
+			sourceTree = "<group>";
+		};
 		8253090A2686289000272F28 /* OptionalViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,13 +197,6 @@
 				8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */,
 			);
 			path = "BottomSheet Authentication";
-			sourceTree = "<group>";
-		};
-		82D9CB792686D7E3005FFB62 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		82D9CB822686D9D8005FFB62 /* Extensions */ = {
@@ -238,14 +242,12 @@
 		82E8F2C9263D70A200ED2375 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				82E8F2CA263D70F300ED2375 /* NotificationApprovalView.swift */,
-				82FC1227263DDDB400F73F4D /* LocationApprovalView.swift */,
 				82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */,
 				82F195F1263E09990079FA8B /* SubViews */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 				82F195FA263E114F0079FA8B /* CategoryDetailView.swift */,
 				82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */,
-				82D9CB792686D7E3005FFB62 /* New Group */,
+				824517AD2689020A00C3099A /* Notifications Agreement Views */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */,
+				8218D12E2689044000A95151 /* AgeVerificationView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */,
 				82F46079268768EA0009AE25 /* CreateAccountBottomSheet.swift in Sources */,
+				8218D12F2689044000A95151 /* AgeVerificationView.swift in Sources */,
 				82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
 				82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */,

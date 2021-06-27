@@ -10,8 +10,9 @@ import SwiftUI
 struct IBottomSheetView<Content>: View where Content: View {
     var canReachTop: Bool = false
     var initialOffsetY: CGFloat = 360
+    var isDraggeable: Bool = true // Will be used for gesture
+
     @Binding var showCard: Bool // = false
-    private let isDraggeable: Bool = true // Will be used for gesture
     @State private var showFull:  Bool = false
     var content: () -> Content
     
@@ -33,6 +34,7 @@ struct IBottomSheetView<Content>: View where Content: View {
         .offset(y: bottomState.height)
         .gesture(
             DragGesture().onChanged { value in
+                if !isDraggeable { return }
                 bottomState = value.translation
                 if showFull {
                     bottomState.height += -300
@@ -42,6 +44,7 @@ struct IBottomSheetView<Content>: View where Content: View {
                 }
             }
             .onEnded { value in
+                if !isDraggeable { return }
                 if value.translation.height > 50 {
                     showCard = false
                 }

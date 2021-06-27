@@ -18,8 +18,8 @@ struct Drink: Identifiable {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = Locale(identifier: "en_US")
-//        formatter.currencyCode = "CDF"
-//        formatter.currencyCode = "USD"
+        //        formatter.currencyCode = "CDF"
+        //        formatter.currencyCode = "USD"
         return formatter.string(from: NSNumber(value: price)) ?? "$0"
     }
     
@@ -32,7 +32,7 @@ struct Drink: Identifiable {
 }
 struct CategoryDetailView: View {
     
-    
+    @EnvironmentObject var mainModel: MainViewModel
     var body: some View {
         VStack {
             TopNavigationHeaderView(title: "Drinks")
@@ -40,10 +40,24 @@ struct CategoryDetailView: View {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
+                        Button(action: {
+                            mainModel.showAgeVerificationView.toggle()
+                        }) {
+                            Image(systemName: "slider.horizontal.3")
+                                .font(.callout)
+                                .frame(width: 40, height: 40)
+                                .background(
+                                    Color.mainBlack
+                                        .opacity(0.05)
+                                )
+                                .foregroundColor(.mainBlack)
+                                .cornerRadius(12)
+                        }
                         ForEach(["Water", "Energy", "Coffee", "Alcohol", "Tea", "Milk"], id:\.self) { drink in
                             Text(drink)
                                 .font(.callout)
-                                .padding(10)
+                                .padding(.horizontal, 10)
+                                .frame(height: 40)
                                 .background(
                                     Color.mainBlack
                                         .opacity(drink == "Alcohol" ? 1 : 0.05)
@@ -82,11 +96,11 @@ struct CategoryDetailView: View {
                                     Spacer()
                                     Text(drink.formattedPrice)
                                 }
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                                .padding(10)
+                                .font(.callout)
+//                                .foregroundColor(.secondary)
+                                .padding()
                                 .background(Color.gray.opacity(0.1))
-                                .cornerRadius(8)
+                                .cornerRadius(12)
                             }
                         }
                         
