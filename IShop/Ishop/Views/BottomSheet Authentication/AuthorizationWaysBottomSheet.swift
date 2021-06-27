@@ -10,10 +10,7 @@ import SwiftUI
 struct AuthorizationWaysBottomSheet: View {
     var body: some View {
         VStack {
-                Text("Please, log in")
-                    .font(Font.headline.bold())
-                    .padding(10)
-                Divider()
+            BottomSheetHeader("Please, log in")
             
             VStack {
                 Button(action: {
@@ -46,7 +43,7 @@ struct AuthorizationWaysBottomSheet: View {
 struct AuthorizationWaysBottomSheet_Previews: PreviewProvider {
     static var previews: some View {
         IBottomSheetView(initialOffsetY: 450, showCard: .constant(true)) {
-        AuthorizationWaysBottomSheet()
+            AuthorizationWaysBottomSheet()
         }
     }
 }

@@ -1,20 +1,17 @@
 //
-//  CardPaymentview.swift
+//  CardPaymentView.swift
 //  Ishop
 //
-//  Created by Cédric Bahirwe on 26/06/2021.
+//  Created by Cédric Bahirwe on 27/06/2021.
 //
 
 import SwiftUI
 
 // TODO: Card Service Detection
-struct CardPaymentview: View {
+struct CardPaymentView: View {
     var body: some View {
         VStack{
-            Text("Add payment card details")
-                .font(Font.headline.bold())
-                .padding(10)
-            Divider()
+            BottomSheetHeader("Add payment card details")
             VStack (spacing: 10) {
                 TextField("Cardholder Name", text: .constant(""))
                     .grayField()
@@ -45,11 +42,10 @@ struct CardPaymentview: View {
     }
 }
 
-struct CardPaymentview_Previews: PreviewProvider {
+struct CardPaymentView_Previews: PreviewProvider {
     static var previews: some View {
         IBottomSheetView(initialOffsetY: 320, showCard: .constant(true)) {
-            CardPaymentview()
+            CardPaymentView()
         }
     }
 }
-

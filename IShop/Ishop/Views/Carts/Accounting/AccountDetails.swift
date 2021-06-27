@@ -13,17 +13,7 @@ struct AccountDetails: View {
     @State private var State: LoadingButton.ButtonState = .initial
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .font(Font.body.bold())
-                Spacer()
-                Text("Account details")
-                    .font(Font.headline.bold())
-                Spacer()
-            }
-            .padding(10)
-            Divider()
+            BottomSheetHeader("Account details", didPressBack: { })
             
             VStack(alignment: .leading) {
                 Text("Almost done, next lets add:")
