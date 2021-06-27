@@ -70,7 +70,7 @@ struct DeliveryDetailsForm: View {
     
     private var instructionsView: some View {
         
-        TextEditor(text: .constant("Placeolder"))
+        TextEditor(text: .constant("PlaceHolder"))
             .frame(height: 80)
             .cornerRadius(10)
     }

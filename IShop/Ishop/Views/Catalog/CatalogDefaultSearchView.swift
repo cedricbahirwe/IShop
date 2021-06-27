@@ -38,6 +38,8 @@ struct CatalogDefaultSearchView: View {
                 
             }
         }
+        .navigationBarHidden(true)
+        
     }
     
 }
