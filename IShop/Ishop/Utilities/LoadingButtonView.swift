@@ -53,8 +53,10 @@ struct LoadingButton: View {
             )
             .cornerRadius(8)
             .animation(.easeIn)
+            .disabled(!isActive)
+            .contrast(isActive ? 1 : 0.5)
             .onChange(of: state) {
-                animate = $0 == .loading ? true : false
+                animate = $0 == .loading
             }
         }
         .disabled(state == .loading)
