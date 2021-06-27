@@ -14,10 +14,7 @@ struct BottomOrderCardView: View {
                 .cornerRadius(3)
                 .opacity(0.1)
             
-            Text("Current order")
-                .font(Font.headline.bold())
-            
-            Divider()
+            BottomSheetHeader("Current Order")
             VStack {
                 
                 CheckoutBannerView(icon: "cart.fill",
