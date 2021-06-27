@@ -131,3 +131,5 @@ struct CatalogHomeView_Previews: PreviewProvider {
         //            .preferredColorScheme(.dark)
     }
 }
+
+

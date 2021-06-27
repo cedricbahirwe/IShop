@@ -29,8 +29,8 @@ struct TopNavigationHeaderView: View {
                         .fontWeight(.regular)
                 }
             }
-            .foregroundColor(.black)
-            
+            .foregroundColor(.mainBlack)
+
             Text(title)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)

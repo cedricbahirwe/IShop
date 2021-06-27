@@ -17,7 +17,7 @@ struct AgeVerificationView: View {
                 .multilineTextAlignment(.center)
                 .font(Font.title2.bold())
             
-            Text("Som products are available to get only with documents confirming th age.")
+            Text("Some products are available to get only with documents confirming the age.")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(10)
                 .layoutPriority(1)

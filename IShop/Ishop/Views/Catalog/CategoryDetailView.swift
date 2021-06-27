@@ -41,7 +41,6 @@ struct CategoryDetailView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         Button(action: {
-                            print("greate")
                             mainModel.showAgeVerificationView.toggle()
                         }) {
                             Image(systemName: "slider.horizontal.3")

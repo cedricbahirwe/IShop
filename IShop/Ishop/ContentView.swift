@@ -28,7 +28,10 @@ struct ContentView: View {
         ZStack {
             NavigationView {
                 CatalogHomeView()
+                   
             }
+            .blurring(isActive: mainModel.showAgeVerificationView,
+                     intensity: 3)
             
             // Sho Age verification view
             IBottomSheetView(initialOffsetY: 280,
