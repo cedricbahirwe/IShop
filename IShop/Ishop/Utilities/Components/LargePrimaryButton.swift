@@ -16,19 +16,25 @@ struct LargePrimaryButton: View {
         self.isActive = isActive
         self.action = action
     }
-    var body: some View {
+    
+    @State private var bgColor: Color = Color.mainDark
+    var content: some View {
         Button(action: action){
             Text(title)
                 .bold()
                 .padding()
                 .foregroundColor(.mainBackground)
                 .frame(maxWidth: .infinity)
-                .background(Color.mainDark)
+//                .background(Color.mainDark)
+                .background(bgColor)
                 .cornerRadius(10)
         }
         .padding(8)
         .disabled(!isActive)
         .contrast(isActive ? 1 : 0.5)
+    }
+    var body: some View {
+       content
     }
 }
 

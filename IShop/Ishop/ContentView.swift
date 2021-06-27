@@ -22,9 +22,21 @@ extension Color {
 }
 
 struct ContentView: View {
+    @EnvironmentObject var mainModel: MainViewModel
+
     var body: some View {
-        NavigationView {
-            CatalogHomeView()
+        ZStack {
+            NavigationView {
+                CatalogHomeView()
+            }
+            
+            // Sho Age verification view
+            IBottomSheetView(initialOffsetY: 280,
+                             isDraggeable: false,
+                             showCard: $mainModel.showAgeVerificationView)
+            {
+                AgeVerificationView()
+            }
         }
     }
 }

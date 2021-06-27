@@ -11,7 +11,7 @@ struct CatalogHomeView: View {
     @State private var showCard = false
     @State private var bottomState = CGSize.zero
     @State private var showFull = false
-    
+
     var body: some View {
         ZStack {
             VStack {
@@ -111,9 +111,12 @@ struct CatalogHomeView: View {
             .disabled(showCard || bottomState != .zero)
             .animation(Animation.default.delay(0.1).speed(2))
             
+            
+            // Show Bottom Card Order
             IBottomSheetView(showCard: $showCard) {
                 BottomOrderCardView()
             }
+  
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
