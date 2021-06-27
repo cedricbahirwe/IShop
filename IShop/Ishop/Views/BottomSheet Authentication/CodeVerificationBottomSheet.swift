@@ -10,18 +10,8 @@ import SwiftUI
 struct CodeVerificationBottomSheet: View {
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .font(Font.body.bold())
-                Spacer()
-                Text("Verification")
-                    .font(Font.headline.bold())
-                Spacer()
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 12)
-            Divider()
+            BottomSheetHeader("Verification")
+            
             VStack(alignment: .leading) {
                 Text("We sent SMS with secure code to verify your phone numer: +243 972 628 511")
                 HStack {
@@ -56,7 +46,7 @@ struct CodeVerificationBottomSheet: View {
                 }
                 .font(.caption)
                 .foregroundColor(.gray)
-
+                
                 
             }
             .padding(10)
@@ -72,3 +62,4 @@ struct CodeVerificationBottomSheet_Previews: PreviewProvider {
         }
     }
 }
+
