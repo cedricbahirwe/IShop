@@ -12,6 +12,7 @@
 		824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517882688E44F00C3099A /* BottomSheetHeader.swift */; };
 		8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */; };
 		8245179D2688ED7700C3099A /* CardPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245179C2688ED7700C3099A /* CardPaymentView.swift */; };
+		824517A62688F2F100C3099A /* BottomSheetSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517A52688F2F100C3099A /* BottomSheetSignIn.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82B4EED62688DD5C003B8CF1 /* DeliveryDetailsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */; };
@@ -69,6 +70,7 @@
 		824517882688E44F00C3099A /* BottomSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeader.swift; sourceTree = "<group>"; };
 		8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePrimaryButton.swift; sourceTree = "<group>"; };
 		8245179C2688ED7700C3099A /* CardPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentView.swift; sourceTree = "<group>"; };
+		824517A52688F2F100C3099A /* BottomSheetSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetSignIn.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsForm.swift; sourceTree = "<group>"; };
@@ -151,6 +153,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		824517A42688F2C400C3099A /* BottomSheet SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				824517A52688F2F100C3099A /* BottomSheetSignIn.swift */,
+			);
+			path = "BottomSheet SignIn";
+			sourceTree = "<group>";
+		};
 		8253090A2686289000272F28 /* OptionalViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,13 +205,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		82D9CB8B2686DA55005FFB62 /* Carts */ = {
+		82D9CB8B2686DA55005FFB62 /* BottomSheet Carts */ = {
 			isa = PBXGroup;
 			children = (
 				82D9CB8C2686DA60005FFB62 /* CartView.swift */,
 				82360B6A268758DC00C6EA95 /* Accounting */,
 			);
-			path = Carts;
+			path = "BottomSheet Carts";
 			sourceTree = "<group>";
 		};
 		82D9CB972686DDC4005FFB62 /* Utilities */ = {
@@ -310,9 +320,10 @@
 			isa = PBXGroup;
 			children = (
 				82EC59802635ED0C009E5801 /* SpashScreenView.swift */,
+				824517A42688F2C400C3099A /* BottomSheet SignIn */,
 				82B4EED42688DD2F003B8CF1 /* BottomSheet DeliveryDetails */,
 				82B5D8462687603500432A00 /* BottomSheet Authentication */,
-				82D9CB8B2686DA55005FFB62 /* Carts */,
+				82D9CB8B2686DA55005FFB62 /* BottomSheet Carts */,
 				82E8F2C9263D70A200ED2375 /* Catalog */,
 				82E8F2C8263D709100ED2375 /* OnBoardings */,
 			);
@@ -464,6 +475,7 @@
 				82F4607E268769120009AE25 /* CodeVerificationBottomSheet.swift in Sources */,
 				8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */,
 				82EC59542635EBDD009E5801 /* Ishop.xcdatamodeld in Sources */,
+				824517A62688F2F100C3099A /* BottomSheetSignIn.swift in Sources */,
 				82FC1232263DE6C700F73F4D /* CatalogHomeView.swift in Sources */,
 				824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */,
 				82F46079268768EA0009AE25 /* CreateAccountBottomSheet.swift in Sources */,
