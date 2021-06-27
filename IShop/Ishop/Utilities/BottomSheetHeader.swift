@@ -37,7 +37,7 @@ struct BottomSheetHeader: View {
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
-                Text("Verification")
+                Text(title)
                     .font(Font.headline.bold())
                 HStack {
                     leftAccessory

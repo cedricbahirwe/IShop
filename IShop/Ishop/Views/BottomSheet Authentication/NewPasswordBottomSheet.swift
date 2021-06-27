@@ -33,18 +33,8 @@ struct NewPasswordBottomSheet: View {
             .padding(10)
             
             Divider()
-            Button(action: {
-                
-            }, label: {
-                Text("Continue")
-                    .bold()
-                    .padding()
-                    .foregroundColor(.mainBackground)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.mainDark)
-                    .cornerRadius(10)
-            })
-            .padding(8)
+            
+            LargePrimaryButton("Continue", action: {})
         }
     }
 }
@@ -57,3 +47,4 @@ struct NewPasswordBottomSheet_Previews: PreviewProvider {
         }
     }
 }
+

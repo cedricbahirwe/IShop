@@ -11,6 +11,7 @@
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		82360B6C268758F400C6EA95 /* CardPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B6B268758F400C6EA95 /* CardPaymentview.swift */; };
 		824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517882688E44F00C3099A /* BottomSheetHeader.swift */; };
+		8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		82B4EED62688DD5C003B8CF1 /* DeliveryDetailsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */; };
@@ -67,6 +68,7 @@
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		82360B6B268758F400C6EA95 /* CardPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentview.swift; sourceTree = "<group>"; };
 		824517882688E44F00C3099A /* BottomSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeader.swift; sourceTree = "<group>"; };
+		8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePrimaryButton.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsForm.swift; sourceTree = "<group>"; };
@@ -141,6 +143,14 @@
 			path = Accounting;
 			sourceTree = "<group>";
 		};
+		8245178D2688E5AE00C3099A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8253090A2686289000272F28 /* OptionalViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 			children = (
 				82D9CB9D2686DF74005FFB62 /* TopNavigationHeaderView.swift */,
 				82360B622687568D00C6EA95 /* LoadingButtonView.swift */,
+				8245178D2688E5AE00C3099A /* Components */,
 				824517882688E44F00C3099A /* BottomSheetHeader.swift */,
 			);
 			path = Utilities;
@@ -473,6 +484,7 @@
 				82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */,
 				82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */,
 				82D9CB8D2686DA60005FFB62 /* CartView.swift in Sources */,
+				8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */,
 				82EC597B2635EBEB009E5801 /* CoreDataView.swift in Sources */,
 				82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */,
 				82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */,
