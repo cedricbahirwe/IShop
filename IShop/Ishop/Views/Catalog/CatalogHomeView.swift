@@ -85,9 +85,9 @@ struct CatalogHomeView: View {
                                 .font(Font.title3.bold())
                                 .opacity(0.85)
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"], id: \.self) { category in
-                                    CategoryItemView(category: category)
-                                }
+                                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"],
+                                        id: \.self,
+                                        content: CategoryItemView.init)
                             }
                         }
                         .padding()

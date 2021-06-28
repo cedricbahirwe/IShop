@@ -78,13 +78,13 @@ struct CategoryDetailView: View {
                             .padding(.trailing)
                     }
                     
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 25) {
-                        ForEach(Drink.drinks) { drink in
-                            SubCategoryItemView(item: drink)
-                            
-                        }
+                    LazyVGrid(columns: [GridItem(.flexible()),
+                                        GridItem(.flexible())], spacing: 25) {
+                        ForEach(Drink.drinks,
+                                content: SubCategoryItemView.init)
                         
                     }
+                    
                 }
                 .padding(10)
             }
@@ -108,6 +108,7 @@ struct SubCategoryItemView: View {
         VStack {
             Color.gray.opacity(0.1)
                 .frame(height: size.width/2.5)
+                .cornerRadius(10)
             VStack(alignment: .leading) {
                 Text(item.name)
                 Text(item.shortDescription)
