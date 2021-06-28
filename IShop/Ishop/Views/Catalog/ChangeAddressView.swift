@@ -35,7 +35,7 @@ struct ChangeAddressView: View {
                 .foregroundColor(.primary)
             }
             .padding(.horizontal)
-
+            Divider()   
 
             if !searchAddress.isEmpty {
                 List(addresses, id: \.self) { address in

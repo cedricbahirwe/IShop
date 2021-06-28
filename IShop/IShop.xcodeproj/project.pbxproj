@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8218D12F2689044000A95151 /* AgeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218D12E2689044000A95151 /* AgeVerificationView.swift */; };
 		8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */; };
+		8231CCA12689AB26006A523D /* CatalogMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231CCA02689AB26006A523D /* CatalogMenuView.swift */; };
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517882688E44F00C3099A /* BottomSheetHeader.swift */; };
 		8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		8218D12E2689044000A95151 /* AgeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerificationView.swift; sourceTree = "<group>"; };
 		8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordBottomSheet.swift; sourceTree = "<group>"; };
+		8231CCA02689AB26006A523D /* CatalogMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogMenuView.swift; sourceTree = "<group>"; };
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		824517882688E44F00C3099A /* BottomSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeader.swift; sourceTree = "<group>"; };
 		8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePrimaryButton.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 				82F195FA263E114F0079FA8B /* CategoryDetailView.swift */,
+				8231CCA02689AB26006A523D /* CatalogMenuView.swift */,
 				82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */,
 				82F195F1263E09990079FA8B /* SubViews */,
 				824517AD2689020A00C3099A /* Notifications Agreement Views */,
@@ -505,6 +508,7 @@
 				82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */,
 				8245179D2688ED7700C3099A /* CardPaymentView.swift in Sources */,
 				82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */,
+				8231CCA12689AB26006A523D /* CatalogMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

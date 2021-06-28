@@ -11,16 +11,21 @@ struct CatalogHomeView: View {
     @State private var showCard = false
     @State private var bottomState = CGSize.zero
     @State private var showFull = false
-
+    
+    @State private var showSideBar = false
+    private let width = UIScreen.main.bounds.size.width
     var body: some View {
         ZStack {
             VStack {
                 HStack(spacing: 20) {
-                    NavigationLink(
-                        destination: ChangeAddressView()) {
+                    Button(action: {
+                        withAnimation(.spring()) {
+                            showSideBar.toggle()
+                        }
+                    }) {
                         Image(systemName: "line.horizontal.3")
                             .foregroundColor(.primary)
-                        }
+                    }
                     Text("52 Av Du Musee, Himbi")
                         .fontWeight(.semibold)
                         .foregroundColor(.mainBackground)
@@ -33,10 +38,10 @@ struct CatalogHomeView: View {
                         }
                     NavigationLink(
                         destination: CatalogDefaultSearchView()){
-                            Image(systemName: "magnifyingglass")
-                                .foregroundColor(.primary)
-                        }
-                   
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.primary)
+                    }
+                    
                     
                 }
                 .padding()
@@ -114,13 +119,31 @@ struct CatalogHomeView: View {
             .opacity(showCard || bottomState != .zero ? 0.4 : 1)
             .disabled(showCard || bottomState != .zero)
             .animation(Animation.default.delay(0.1).speed(2))
-            
+            .blurring(isActive: showSideBar, intensity: 3)
             
             // Show Bottom Card Order
             IBottomSheetView(showCard: $showCard) {
                 BottomOrderCardView()
             }
-  
+            
+            
+            HStack(spacing: 0) {
+                CatalogMenuView()
+                    .frame(width: width*0.65)
+                    .background(Color.mainBackground)
+                    .offset(x: showSideBar ? 0 :  -(width*0.65))
+                Spacer()
+            }
+            .background(
+                Color.black
+                    .opacity(0.01)
+                    .onTapGesture {
+                        withAnimation(.spring()) {
+                            showSideBar.toggle()
+                        }
+                    }
+            )
+            
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
