@@ -16,7 +16,11 @@ struct CatalogHomeView: View {
         ZStack {
             VStack {
                 HStack(spacing: 20) {
-                    Image(systemName: "line.horizontal.3")
+                    NavigationLink(
+                        destination: ChangeAddressView()) {
+                        Image(systemName: "line.horizontal.3")
+                            .foregroundColor(.primary)
+                        }
                     Text("52 Av Du Musee, Himbi")
                         .fontWeight(.semibold)
                         .foregroundColor(.mainBackground)

@@ -243,10 +243,10 @@
 			isa = PBXGroup;
 			children = (
 				82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */,
-				82F195F1263E09990079FA8B /* SubViews */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 				82F195FA263E114F0079FA8B /* CategoryDetailView.swift */,
 				82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */,
+				82F195F1263E09990079FA8B /* SubViews */,
 				824517AD2689020A00C3099A /* Notifications Agreement Views */,
 			);
 			path = Catalog;
