@@ -34,12 +34,18 @@ struct CatalogDefaultSearchView: View {
             .padding([.horizontal, .top])
             .padding(.bottom, 8)
             Divider()
+            
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"], id: \.self) { category in
+                    CategoryItemView(category: "")
+                }
+            }
+            .padding()
             VStack {
                 Spacer()
                 Text("Start typing something")
                     .foregroundColor(.secondary)
                 Spacer()
-                
                 
             }
         }
