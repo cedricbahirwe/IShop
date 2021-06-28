@@ -24,6 +24,7 @@ struct NewPasswordBottomSheet: View {
             Divider()
             
             LargePrimaryButton("Continue", action: {})
+                .padding(.horizontal, 8)
         }
     }
 }

@@ -45,19 +45,16 @@ struct CatalogMenuView: View {
                 Text("Get paid to help deliver the products our customers want.")
                     .font(.callout)
                 LargePrimaryButton("Drive for IShop", action: {})
-                    .padding(-10)
             } else {
                 Text("Sign in to see account details")
                     .font(.callout)
                 LargePrimaryButton("Sign In", action: {})
-                    .padding(-10)
 
                 Spacer()
                 Text("Get $10 Give $10").bold()
                 Text("Sign up now and refer a friend.\nYou will get $10 and give them $10 when they complete their first order.")
                     .font(.footnote)
                 LargePrimaryButton("Sign Up Now", action: {})
-                    .padding(-10)
                 
                 
             }

@@ -36,8 +36,7 @@ struct CardPaymentView: View {
             .padding(10)
             Divider()
             LoadingButton(title: "Add") { }
-                .padding(10)
-            
+                .padding(.horizontal, 8)
         }
     }
 }
@@ -84,6 +83,7 @@ struct CardAdditionView: View {
             Divider()
             
             LargePrimaryButton("Continue", action: { })
+                .padding(.horizontal, 8)
         }
     }
 }

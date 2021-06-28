@@ -27,6 +27,7 @@ struct DeliveryDetailsForm: View {
             
             Divider()
             LargePrimaryButton("Save", action: {})
+                .padding(.horizontal, 8)
             
         }
     }
