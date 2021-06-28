@@ -8,28 +8,59 @@
 import SwiftUI
 
 struct CatalogMenuView: View {
+    
+    @State private var isAuthorized: Bool = true
+    
+    
+    init() {
+        UISwitch.appearance().tintColor = .red
+    }
     var body: some View {
         VStack(alignment: .leading) {
-            Text("IShop")
-                .font(Font.largeTitle.bold())
-                .padding(.top, 25)
-            
-            Group {
-                MenuOption(title: "John Doe",
-                           subtitle: "My account") {}
-                
-                MenuOption(title: "My orders", action: { })
-                MenuOption(title: "My wallet", action: { })
-                MenuOption(title: "Refer a friend", action: { })
-                MenuOption(title: "About IShop", action: { })
-                MenuOption(title: "My orders", action: { })
-                MenuOption(title: "Logout", action: { })
+            HStack {
+                Text("IShop")
+                    .font(Font.largeTitle.bold())
+                Spacer()
+                Toggle("", isOn: $isAuthorized.animation())
+                    .labelsHidden()
+                    .toggleStyle(SwitchToggleStyle(tint: Color.primary))
+
             }
-            Spacer()
-            Text("Get paid to help deliver the products our customers want.")
-                .font(.callout)
-            LargePrimaryButton("Drive for IShop", action: {})
-                .padding(-10)
+            .padding(.top, 25)
+            .padding(.bottom)
+
+            if isAuthorized {
+                Group {
+                    MenuOption(title: "John Doe",
+                               subtitle: "My account") {}
+                    
+                    MenuOption(title: "My orders", action: { })
+                    MenuOption(title: "My wallet", action: { })
+                    MenuOption(title: "Refer a friend", action: { })
+                    MenuOption(title: "About IShop", action: { })
+                    MenuOption(title: "My orders", action: { })
+                    MenuOption(title: "Logout", action: { })
+                }
+                Spacer()
+                Text("Get paid to help deliver the products our customers want.")
+                    .font(.callout)
+                LargePrimaryButton("Drive for IShop", action: {})
+                    .padding(-10)
+            } else {
+                Text("Sign in to see account details")
+                    .font(.callout)
+                LargePrimaryButton("Sign In", action: {})
+                    .padding(-10)
+
+                Spacer()
+                Text("Get $10 Give $10").bold()
+                Text("Sign up now and refer a friend.\nYou will get $10 and give them $10 when they complete their first order.")
+                    .font(.footnote)
+                LargePrimaryButton("Sign Up Now", action: {})
+                    .padding(-10)
+                
+                
+            }
             HStack {
                 // Social Media
             }
@@ -43,7 +74,7 @@ struct CatalogMenuView: View {
 struct CatalogMenuView_Previews: PreviewProvider {
     static var previews: some View {
         CatalogMenuView()
-//            .previewLayout(.fixed(width: 250, height: 800))
+            .previewLayout(.fixed(width: 250, height: 800))
     }
 }
 
