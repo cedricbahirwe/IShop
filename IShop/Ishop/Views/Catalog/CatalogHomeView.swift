@@ -132,17 +132,19 @@ struct CatalogHomeView: View {
                     .frame(width: width*0.65)
                     .background(Color.mainBackground)
                     .offset(x: showSideBar ? 0 :  -(width*0.65))
-                Spacer()
-            }
-            .background(
-                Color.black
-                    .opacity(0.01)
-                    .onTapGesture {
-                        withAnimation(.spring()) {
-                            showSideBar.toggle()
+                
+                if showSideBar {
+                    Color.black
+                        .opacity(0.01)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                showSideBar.toggle()
+                            }
                         }
-                    }
-            )
+                } else {
+                    Spacer()
+                }
+            }
             
         }
         .navigationBarTitle("")

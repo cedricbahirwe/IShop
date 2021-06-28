@@ -36,7 +36,7 @@ struct CatalogMenuView: View {
             
             .padding(.bottom, 50)
         }
-        .padding(10)
+        .padding()
     }
 }
 
@@ -66,7 +66,6 @@ fileprivate struct MenuOption: View {
                     .padding(.bottom, 5)
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.footnote)
                     if let subtitle = subtitle {
                         Text(subtitle)
                             .font(.caption)
@@ -82,6 +81,8 @@ fileprivate struct MenuOption: View {
                 )
             }
             .padding(.top, 5)
+            .font(.callout)
+
         }
         .accentColor(.primary)
     }
