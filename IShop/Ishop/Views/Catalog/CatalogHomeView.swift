@@ -13,7 +13,7 @@ struct CatalogHomeView: View {
     @State private var showFull = false
     
     @State private var showSideBar = false
-    private let width = UIScreen.main.bounds.size.width
+    private let width = size.width
     var body: some View {
         ZStack {
             VStack {
@@ -72,16 +72,7 @@ struct CatalogHomeView: View {
                                 ForEach(["Health", "Drinks", "Snacks & Quick Meals", "Grocery"], id: \.self) { category in
                                     NavigationLink(
                                         destination: CategoryDetailView()) {
-                                        ZStack {
-                                            Text(category)
-                                                .font(Font.callout.bold())
-                                                .foregroundColor(.mainBlack)
-                                        }
-                                        .padding(10)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .frame(height: size.width/2.5, alignment: .top)
-                                        .background(Color.gray.opacity(0.1))
-                                        .cornerRadius(10)
+                                        CategoryItemView(category: category)
                                         
                                     }
                                 }
@@ -94,18 +85,9 @@ struct CatalogHomeView: View {
                                 .font(Font.title3.bold())
                                 .opacity(0.85)
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"], id: \.self) { category in
-                                    ZStack {
-                                        Text(category)
-                                            .font(Font.callout.bold())
-                                            .foregroundColor(.mainBlack)
-                                    }
-                                    .padding(10)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .frame(height: size.width/2.5, alignment: .top)
-                                    .background(Color.gray.opacity(0.1))
-                                    .cornerRadius(10)
-                                }
+                                ForEach(["Women's\nEssential", "Baby & Kids", "Toundra", "Beverage"],
+                                        id: \.self,
+                                        content: CategoryItemView.init)
                             }
                         }
                         .padding()
@@ -128,7 +110,7 @@ struct CatalogHomeView: View {
             
             
             HStack(spacing: 0) {
-                CatalogMenuView()
+                CatalogSideMenuView(isPresented: $showSideBar)
                     .frame(width: width*0.65)
                     .background(Color.mainBackground)
                     .offset(x: showSideBar ? 0 :  -(width*0.65))
@@ -162,3 +144,19 @@ struct CatalogHomeView_Previews: PreviewProvider {
 }
 
 
+
+struct CategoryItemView: View {
+    let category: String
+    var body: some View {
+        ZStack {
+            Text(category)
+                .font(Font.callout.bold())
+                .foregroundColor(.mainBlack)
+        }
+        .padding(10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(height: size.width/2.5, alignment: .top)
+        .background(Color.gray.opacity(0.1))
+        .cornerRadius(10)
+    }
+}

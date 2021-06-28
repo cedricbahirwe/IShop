@@ -22,7 +22,7 @@ struct AgeVerificationView: View {
                 .padding(10)
                 .layoutPriority(1)
             
-            VStack(spacing: -5) {
+            VStack {
                 LargePrimaryButton("Yes, I'm already 18", action: {
                     mainModel.showAgeVerificationView.toggle()
                 })
@@ -31,6 +31,7 @@ struct AgeVerificationView: View {
                 })
 
             }
+            .padding(.horizontal, 8)
                 
         }
         .padding(.top)

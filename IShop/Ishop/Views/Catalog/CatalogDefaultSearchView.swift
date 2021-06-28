@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CatalogDefaultSearchView: View {
     @Environment(\.presentationMode) private  var presentationMode
+    @State private var searchText: String = ""
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -34,13 +35,24 @@ struct CatalogDefaultSearchView: View {
             .padding([.horizontal, .top])
             .padding(.bottom, 8)
             Divider()
-            VStack {
-                Spacer()
-                Text("Start typing something")
-                    .foregroundColor(.secondary)
-                Spacer()
+            if !searchText.isEmpty {
                 
-                
+                VStack {
+                    Spacer()
+                    Text("Start typing something")
+                        .foregroundColor(.secondary)
+                    Spacer()
+                    
+                }
+            } else {
+                LazyVGrid(columns: [GridItem(.flexible()),
+                                    GridItem(.flexible())], spacing: 25) {
+                    ForEach(Drink.drinks,
+                            content: SubCategoryItemView.init)
+                        .redacted(reason: .placeholder)
+                    
+                }
+                .padding()
             }
         }
         .navigationBarHidden(true)

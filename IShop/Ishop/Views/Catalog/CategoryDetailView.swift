@@ -78,33 +78,13 @@ struct CategoryDetailView: View {
                             .padding(.trailing)
                     }
                     
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 25) {
-                        ForEach(Drink.drinks) { drink in
-                            VStack {
-                                Color.gray.opacity(0.1)
-                                    .frame(height: size.width/2.5)
-                                VStack(alignment: .leading) {
-                                    Text(drink.name)
-                                    Text(drink.shortDescription)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-                                }
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .lineLimit(1)
-                                HStack {
-                                    Image(systemName: "cart.badge.plus")
-                                    Spacer()
-                                    Text(drink.formattedPrice)
-                                }
-                                .font(.callout)
-//                                .foregroundColor(.secondary)
-                                .padding()
-                                .background(Color.gray.opacity(0.1))
-                                .cornerRadius(12)
-                            }
-                        }
+                    LazyVGrid(columns: [GridItem(.flexible()),
+                                        GridItem(.flexible())], spacing: 25) {
+                        ForEach(Drink.drinks,
+                                content: SubCategoryItemView.init)
                         
                     }
+                    
                 }
                 .padding(10)
             }
@@ -121,3 +101,32 @@ struct CategoryDetailView_Previews: PreviewProvider {
     }
 }
 
+
+struct SubCategoryItemView: View {
+    let item: Drink
+    var body: some View {
+        VStack {
+            Color.gray.opacity(0.1)
+                .frame(height: size.width/2.5)
+                .cornerRadius(10)
+            VStack(alignment: .leading) {
+                Text(item.name)
+                Text(item.shortDescription)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .lineLimit(1)
+            HStack {
+                Image(systemName: "cart.badge.plus")
+                Spacer()
+                Text(item.formattedPrice)
+            }
+            .font(.callout)
+            //                                .foregroundColor(.secondary)
+            .padding()
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(12)
+        }
+    }
+}
