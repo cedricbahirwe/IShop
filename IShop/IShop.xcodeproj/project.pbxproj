@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8218D12F2689044000A95151 /* AgeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218D12E2689044000A95151 /* AgeVerificationView.swift */; };
 		8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */; };
-		8231CCA12689AB26006A523D /* CatalogMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231CCA02689AB26006A523D /* CatalogMenuView.swift */; };
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
 		824517892688E44F00C3099A /* BottomSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517882688E44F00C3099A /* BottomSheetHeader.swift */; };
 		8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */; };
@@ -19,6 +18,7 @@
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		829C2E592689DFCB00750C4D /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E582689DFCB00750C4D /* String_Extensions.swift */; };
 		829C2E5E2689E1FC00750C4D /* LargeBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */; };
+		829C2E632689E5F900750C4D /* CatalogSideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E622689E5F900750C4D /* CatalogSideMenuView.swift */; };
 		82B37BA92689DB130004DD2A /* MyOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B37BA82689DB130004DD2A /* MyOrdersView.swift */; };
 		82B4EED62688DD5C003B8CF1 /* DeliveryDetailsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */; };
 		82B5D8502687606300432A00 /* AuthorizationWaysBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */; };
@@ -72,7 +72,6 @@
 /* Begin PBXFileReference section */
 		8218D12E2689044000A95151 /* AgeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerificationView.swift; sourceTree = "<group>"; };
 		8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordBottomSheet.swift; sourceTree = "<group>"; };
-		8231CCA02689AB26006A523D /* CatalogMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogMenuView.swift; sourceTree = "<group>"; };
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		824517882688E44F00C3099A /* BottomSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeader.swift; sourceTree = "<group>"; };
 		8245178E2688E5BA00C3099A /* LargePrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargePrimaryButton.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		829C2E582689DFCB00750C4D /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 		829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeBlackButton.swift; sourceTree = "<group>"; };
+		829C2E622689E5F900750C4D /* CatalogSideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSideMenuView.swift; sourceTree = "<group>"; };
 		82B37BA82689DB130004DD2A /* MyOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersView.swift; sourceTree = "<group>"; };
 		82B4EED52688DD5C003B8CF1 /* DeliveryDetailsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsForm.swift; sourceTree = "<group>"; };
 		82B5D84F2687606300432A00 /* AuthorizationWaysBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationWaysBottomSheet.swift; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 				82FC122C263DDFF200F73F4D /* ChangeAddressView.swift */,
 				82FC1231263DE6C700F73F4D /* CatalogHomeView.swift */,
 				82F195FA263E114F0079FA8B /* CategoryDetailView.swift */,
-				8231CCA02689AB26006A523D /* CatalogMenuView.swift */,
+				829C2E622689E5F900750C4D /* CatalogSideMenuView.swift */,
 				82D9CB7A2686D7F6005FFB62 /* CatalogDefaultSearchView.swift */,
 				82B37BA72689DB010004DD2A /* SideBar Destinations */,
 				82F195F1263E09990079FA8B /* SubViews */,
@@ -518,6 +518,7 @@
 				8253090C268628B500272F28 /* AboutUsView.swift in Sources */,
 				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
 				82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */,
+				829C2E632689E5F900750C4D /* CatalogSideMenuView.swift in Sources */,
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
 				82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */,
 				82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */,
@@ -528,7 +529,6 @@
 				82D9CB992686DDCE005FFB62 /* IBottomSheetView.swift in Sources */,
 				8245179D2688ED7700C3099A /* CardPaymentView.swift in Sources */,
 				82D9CBBE2686EB13005FFB62 /* Color_Extensions.swift in Sources */,
-				8231CCA12689AB26006A523D /* CatalogMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

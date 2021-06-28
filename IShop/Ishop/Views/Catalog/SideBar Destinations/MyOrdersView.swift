@@ -33,49 +33,81 @@ struct MyOrdersView: View {
     }()
     var body: some View {
         VStack(alignment: .leading) {
-            TopNavigationHeaderView(title: "My orders")
+            TopNavigationHeaderView(title: "My Orders")
                 .overlay(
                     Button("Support") { }
                         .font(Font.callout.weight(.semibold))
                         .foregroundColor(.mainBlack)
-                        .padding(.trailing, 8)
+                        .padding(.trailing, 10)
                     , alignment: .trailing
                 )
             
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Current order")
-                        .font(Font.title3.bold())
-                    Spacer()
-                    Text("\(Date(), formatter: Self.dateFormat)")
+            ScrollView {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Current order")
+                            .font(Font.title3.bold())
+                        Spacer()
+                        Text("\(Date(), formatter: Self.dateFormat)")
+                    }
+                    .padding(.vertical, 10)
+                    
+                    HStack {
+                        Text("Order status")
+                        Spacer()
+                        Text("Packing")
+                    }
+                    .font(Font.body.weight(.semibold))
+                    
+                    ForEach(orders, content: OrderStatusDisplay.init)
+                    
+                    HStack {
+                        Text("Total")
+                        Spacer()
+                        Text(ordersTotal.formattedPrice)
+                    }
+                    .font(Font.body.bold())
+                    .padding(.vertical, 8)
+                    
+                    LargeBlackButton("Show on map", action: { })
+                    
+                    LargePrimaryButton("Cancel order", action: { })
+                    
+                    
+                    Section(header:
+                                HStack {
+                                    Text("Yesterday")
+                                        .font(Font.title3.bold())
+                                    Spacer()
+                                    Text("\(Date(), formatter: Self.dateFormat)")
+                                }
+                                .padding(.vertical, 10)) {
+                        HStack {
+                            Text("Order status")
+                            Spacer()
+                            Text("Cancel")
+                        }
+                        .font(Font.body.weight(.semibold))
+                        
+                        totalSection
+                    }
+                    
                 }
-                .padding(.vertical, 10)
-                
-                HStack {
-                    Text("Order status")
-                    Spacer()
-                    Text("Packing")
-                }
-                .font(Font.body.weight(.semibold))
-                
-                ForEach(orders, content: OrderStatusDisplay.init)
-                
-                HStack {
-                    Text("Total")
-                    Spacer()
-                    Text(ordersTotal.formattedPrice)
-                }
-                .font(Font.body.bold())
-                .padding(.vertical, 8)
-                
-                LargeBlackButton("Show on map", action: { })
-                
-                LargePrimaryButton("Cancel order", action: { })
+                .padding(10)
             }
-            .padding(10)
-            
-            Spacer()
         }
+        .navigationBarHidden(true)
+    }
+    
+    
+    private var totalSection: some View {
+        HStack {
+            Text("Total")
+            Spacer()
+            Text(ordersTotal.formattedPrice)
+        }
+        .font(Font.body.bold())
+        .padding(.vertical, 8)
     }
 }
 

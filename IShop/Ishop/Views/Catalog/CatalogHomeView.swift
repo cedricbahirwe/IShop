@@ -110,7 +110,7 @@ struct CatalogHomeView: View {
             
             
             HStack(spacing: 0) {
-                CatalogMenuView()
+                CatalogSideMenuView(isPresented: $showSideBar)
                     .frame(width: width*0.65)
                     .background(Color.mainBackground)
                     .offset(x: showSideBar ? 0 :  -(width*0.65))
