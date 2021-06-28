@@ -10,23 +10,34 @@ import SwiftUI
 struct ChangeAddressView: View {
     @State private var searchAddress: String = ""
     private let addresses: [String] = ["Himbi", "Office", "Ndosho", "Kyeshero"]
+    @Environment(\.presentationMode) private  var presentationMode
+
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "magnifyingglass")
-                TextField("Enter your address", text: $searchAddress)
-                    .textContentType(.addressCity)
-                    .keyboardType(.webSearch)
-                Image(systemName: "mic.fill")
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    TextField("Enter your address", text: $searchAddress)
+                        .textContentType(.addressCityAndState)
+                        
+                    Image(systemName: "mic.fill")
+                    
+                }
+                .padding(5)
+                .background(Color(.tertiarySystemGroupedBackground))
+                .cornerRadius(8)
+                .foregroundColor(Color.mainBlack.opacity(0.6))
                 
+                
+                Button("Cancel") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+                .foregroundColor(.primary)
             }
-            .padding(5)
-            .background(Color(.tertiarySystemGroupedBackground))
-            .cornerRadius(8)
-            .foregroundColor(Color.mainBlack.opacity(0.6))
             .padding(.horizontal)
+            Divider()   
 
-            if searchAddress.isEmpty {
+            if !searchAddress.isEmpty {
                 List(addresses, id: \.self) { address in
                     HStack(alignment: .top){
                         Image(systemName: "multiply.square")
@@ -65,6 +76,7 @@ struct ChangeAddressView: View {
             }
             
         }
+        .navigationBarHidden(true)
     }
 }
 
