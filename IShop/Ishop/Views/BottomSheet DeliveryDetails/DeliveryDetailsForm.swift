@@ -42,7 +42,7 @@ struct DeliveryDetailsForm: View {
     private var addressOptions: some View {
         Group {
             HStack(alignment: .top) {
-                Image(systemName: "pin")
+                Image(systemName: "mappin.and.ellipse")
                 VStack {
                     HStack(alignment: .top) {
                         VStack(alignment: .leading) {
