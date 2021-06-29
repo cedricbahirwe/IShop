@@ -47,14 +47,18 @@ struct CheckoutBannerView: View {
         HStack {
             Image(systemName:icon)
             Text(title)
-            Spacer()
-            
-            Text(price)
+            if !price.isEmpty {
+                Spacer()
+                
+                Text(price)
+            }
         }
         .font(Font.callout.weight(.semibold))
         .padding()
         .foregroundColor(.mainBackground)
+        .frame(maxWidth: .infinity)
         .background(Color.mainDark)
         .cornerRadius(8)
+        .layoutPriority(3)
     }
 }

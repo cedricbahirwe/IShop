@@ -36,7 +36,8 @@ struct OrderReferalView: View {
 
 struct OrderReferalView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderReferalView()            .previewLayout(.fixed(width: 400, height: 320))
+        OrderReferalView()
+            .previewLayout(.fixed(width: 400, height: 320))
 
     }
 }

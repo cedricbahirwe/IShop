@@ -15,6 +15,7 @@ fileprivate struct OrderItem: Identifiable {
     let price: Double
 }
 struct MyOrdersView: View {
+    @State private var showMap = false
     private let orders:[OrderItem]  = [
         .init(name: "Gatorade Frost", quantity: 1, price: 1.59),
         .init(name: "Caprisun", quantity: 1, price: 2.89),
@@ -69,7 +70,12 @@ struct MyOrdersView: View {
                     .font(Font.body.bold())
                     .padding(.vertical, 8)
                     
-                    LargeBlackButton("Show on map", action: { })
+                    LargeBlackButton("Show on map") {
+                        showMap.toggle()
+                    }
+                    .fullScreenCover(isPresented: $showMap){
+                        OrderMapView()
+                    }
                     
                     LargePrimaryButton("Cancel order", action: { })
                     
