@@ -16,6 +16,7 @@
 		824517A62688F2F100C3099A /* BottomSheetSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517A52688F2F100C3099A /* BottomSheetSignIn.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
 		8266F056268B1E090039973B /* OrderReferalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F055268B1E090039973B /* OrderReferalView.swift */; };
+		8266F05B268B21FF0039973B /* LargeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F05A268B21FF0039973B /* LargeRatingView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		829C2E592689DFCB00750C4D /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E582689DFCB00750C4D /* String_Extensions.swift */; };
 		829C2E5E2689E1FC00750C4D /* LargeBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */; };
@@ -80,6 +81,7 @@
 		824517A52688F2F100C3099A /* BottomSheetSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetSignIn.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		8266F055268B1E090039973B /* OrderReferalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReferalView.swift; sourceTree = "<group>"; };
+		8266F05A268B21FF0039973B /* LargeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeRatingView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		829C2E582689DFCB00750C4D /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 		829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeBlackButton.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 			children = (
 				82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */,
 				8218D12E2689044000A95151 /* AgeVerificationView.swift */,
+				8266F05A268B21FF0039973B /* LargeRatingView.swift */,
 				8266F055268B1E090039973B /* OrderReferalView.swift */,
 			);
 			path = SubViews;
@@ -526,6 +529,7 @@
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
 				82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */,
 				82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */,
+				8266F05B268B21FF0039973B /* LargeRatingView.swift in Sources */,
 				82D9CB8D2686DA60005FFB62 /* CartView.swift in Sources */,
 				8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */,
 				82B37BA92689DB130004DD2A /* MyOrdersView.swift in Sources */,
