@@ -13,71 +13,111 @@ enum OrderState {
 struct OrderStatus: Identifiable {
     let id = UUID()
     let title: String
-    let subtitle: String? = nil
+    var subtitle: String? = nil
     var state: OrderState
     
     static let orderStatusSteps: [OrderStatus] = [
         OrderStatus(title: "Packing", state: .complete),
         OrderStatus(title: "En Route", state: .progress),
-        OrderStatus(title: "Packing", state: .initial),
+        OrderStatus(title: "Packing",
+                    subtitle: "Estimated delivery (6:00pm)", state: .initial),
     ]
 }
 
 struct OrderConfirmationView: View {
+    @State private var rating: Int = 0
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             BottomSheetHeader("Current order")
-            VStack(alignment: .leading) {
-                
-                VStack(alignment: .leading, spacing: 10)  {
-                    Text("Your order is confirmed")
-                        .font(Font.title2.bold())
-                    HStack(alignment: .top) {
-                        Image(systemName: "mappin.and.ellipse")
-                        VStack(alignment: .leading) {
-                            Text("Himbi, Riviera Hotel")
-                                .font(.callout)
-                            Text("Goma, Av Du Musee")
-                                .foregroundColor(.gray)
-                                .font(.caption)
-                        }
-                    }
-                }
-                .padding(10)
-                HStack {
-                    VStack(alignment: .leading, spacing: 15) {
-                        ForEach(OrderStatus.orderStatusSteps) { step in
-                            Circle()
-                                .foregroundColor(Color.primary)
-                                .frame(width: 30, height: 30)
-                                .overlay(
-                                    ZStack {
-//                                       swit
-                                    }
-                                )
-                        }
-                    }
+            ScrollView {
+                VStack(alignment: .leading) {
                     
-                    VStack(alignment: .leading, spacing: 15) {
-                        ForEach(OrderStatus.orderStatusSteps) { step in
-                            Text(step.title)
-                                .font(.footnote)
+                    VStack(alignment: .leading, spacing: 10)  {
+                        Text("Your order is confirmed")
+                            .font(Font.title2.bold())
+                        HStack(alignment: .top) {
+                            Image(systemName: "mappin.and.ellipse")
+                            VStack(alignment: .leading) {
+                                Text("Himbi, Riviera Hotel")
+                                    .font(.callout)
+                                Text("Goma, Av Du Musee")
+                                    .foregroundColor(.gray)
+                                    .font(.caption)
+                            }
                         }
                     }
-                }
-                
-                myOrderSection
-                    .padding(.leading, 10)
+                    .padding(10)
+                    HStack {
+                        VStack(alignment: .leading, spacing: 25) {
+                            ForEach(0..<OrderStatus.orderStatusSteps.count) { index in
+                                let step = OrderStatus.orderStatusSteps[index]
+                                Circle()
+                                    .foregroundColor(Color.primary)
+                                    .frame(width: 30, height: 30)
+                                    .overlay(
+                                        ZStack {
+                                            if step.state == .complete {
+                                                Image(systemName: "checkmark")
 
-                VStack(spacing: 10) {
-                    LargeRatingView(rating: .constant(0))
-                    freeDeliveryToast
+                                            } else {
+                                                Text("\(index+1)")
+                                            }
+                                        }
+                                        .font(Font.footnote.weight(.semibold))
+                                        .foregroundColor(.mainBackground)
+                                    )
+                                    .overlay(
+                                        ZStack {
+                                            if index != 0 {
+                                                Color.secondary
+                                                    .frame(width: 2, height: 25)
+                                                    .overlay(
+                                                        Color.primary
+                                                            .frame(width: 2, height: 15)
+                                                            .opacity(index == 1 ? 1 : 0)
+                                                        , alignment: .top
+                                                    )
+                                                    .offset(y: -25)
+                                            }
+                                        }
+                                        , alignment: .top
+                                    )
+                            }
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 25) {
+                            ForEach(OrderStatus.orderStatusSteps) { step in
+                                VStack(alignment: .leading) {
+                                    Text(step.title)
+                                        .font(.footnote)
+                                    if let subtitle = step.subtitle {
+                                        Text(subtitle)
+                                            .font(.caption)
+                                    }
+                                }
+                                .frame(height: 30)
+                                    
+                               
+                            }
+                        }
+                    }
                     
-                    LargePrimaryButton("Show on map", action: { })
-                    
-                    LargeBlackButton("Contact your driver", action: { })
+                    .padding(10)
+                    myOrderSection
+                        .padding(.leading, 10)
+                        .redacted(reason: .placeholder)
+
+                    VStack(spacing: 10) {
+                        LargeRatingView(rating: $rating)
+                        
+                        freeDeliveryToast
+                        
+                        LargePrimaryButton("Show on map", action: { })
+                        
+                        LargeBlackButton("Contact your driver", action: { })
+                    }
+                    .padding(10)
                 }
-                .padding(10)
             }
         }
     }
