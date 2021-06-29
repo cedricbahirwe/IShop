@@ -54,6 +54,7 @@ struct CatalogDefaultSearchView: View {
                 }
                 .padding()
             }
+            Spacer()
         }
         .navigationBarHidden(true)
         

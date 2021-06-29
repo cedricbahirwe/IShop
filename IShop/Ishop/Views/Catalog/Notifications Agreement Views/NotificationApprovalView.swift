@@ -47,18 +47,3 @@ struct NotificationApprovalView_Previews: PreviewProvider {
     }
 }
 
-struct LargeButtonStyle: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .foregroundColor(.mainBackground)
-            .frame(maxWidth: .infinity)
-            .frame(height: 55)
-            .background(Color.mainBlack)
-    }
-}
-
-extension View {
-    func largeButtonStyle() -> some View {
-        ModifiedContent(content: self, modifier: LargeButtonStyle())
-    }
-}

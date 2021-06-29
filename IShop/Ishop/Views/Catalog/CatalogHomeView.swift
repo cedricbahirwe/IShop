@@ -129,6 +129,7 @@ struct CatalogHomeView: View {
             }
             
         }
+        .ignoresSafeArea(.all, edges: .bottom)
         .navigationBarTitle("")
         .navigationBarHidden(true)
     }
