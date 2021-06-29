@@ -45,7 +45,6 @@ struct CatalogSideMenuView: View {
                     MenuOptionView(title: "My wallet", action: { })
                     MenuOptionView(title: "Refer a friend", action: { })
                     MenuOptionView(title: "About IShop", action: { })
-                    MenuOptionView(title: "My orders", action: { })
                     MenuOptionView(title: "Logout", action: { })
                 }
                 Spacer()
@@ -133,7 +132,7 @@ fileprivate struct MenuOptionView: View {
             )
         }
         .padding(.top, 5)
-        .font(.callout)
+        .font(.body)
         .foregroundColor(.primary)
     }
 }

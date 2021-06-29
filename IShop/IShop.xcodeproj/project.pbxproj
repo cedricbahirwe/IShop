@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82161FEA268B3548001F530E /* OrderMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82161FE9268B3548001F530E /* OrderMapView.swift */; };
 		8218D12F2689044000A95151 /* AgeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8218D12E2689044000A95151 /* AgeVerificationView.swift */; };
 		8221217C26876BFD007B6C14 /* NewPasswordBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */; };
 		82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82360B622687568D00C6EA95 /* LoadingButtonView.swift */; };
@@ -15,6 +16,9 @@
 		8245179D2688ED7700C3099A /* CardPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245179C2688ED7700C3099A /* CardPaymentView.swift */; };
 		824517A62688F2F100C3099A /* BottomSheetSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824517A52688F2F100C3099A /* BottomSheetSignIn.swift */; };
 		8253090C268628B500272F28 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253090B268628B500272F28 /* AboutUsView.swift */; };
+		8266F056268B1E090039973B /* OrderReferalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F055268B1E090039973B /* OrderReferalView.swift */; };
+		8266F05B268B21FF0039973B /* LargeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F05A268B21FF0039973B /* LargeRatingView.swift */; };
+		8266F060268B266C0039973B /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8266F05F268B266C0039973B /* OrderConfirmationView.swift */; };
 		826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AA1EE2636008E001EFDBB /* OnBoardingView.swift */; };
 		829C2E592689DFCB00750C4D /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E582689DFCB00750C4D /* String_Extensions.swift */; };
 		829C2E5E2689E1FC00750C4D /* LargeBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */; };
@@ -70,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82161FE9268B3548001F530E /* OrderMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapView.swift; sourceTree = "<group>"; };
 		8218D12E2689044000A95151 /* AgeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerificationView.swift; sourceTree = "<group>"; };
 		8221217B26876BFD007B6C14 /* NewPasswordBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordBottomSheet.swift; sourceTree = "<group>"; };
 		82360B622687568D00C6EA95 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
@@ -78,6 +83,9 @@
 		8245179C2688ED7700C3099A /* CardPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentView.swift; sourceTree = "<group>"; };
 		824517A52688F2F100C3099A /* BottomSheetSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetSignIn.swift; sourceTree = "<group>"; };
 		8253090B268628B500272F28 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		8266F055268B1E090039973B /* OrderReferalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReferalView.swift; sourceTree = "<group>"; };
+		8266F05A268B21FF0039973B /* LargeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeRatingView.swift; sourceTree = "<group>"; };
+		8266F05F268B266C0039973B /* OrderConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
 		826AA1EE2636008E001EFDBB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		829C2E582689DFCB00750C4D /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 		829C2E5D2689E1FC00750C4D /* LargeBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeBlackButton.swift; sourceTree = "<group>"; };
@@ -146,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82161FE8268B351F001F530E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				8266F05F268B266C0039973B /* OrderConfirmationView.swift */,
+				8266F055268B1E090039973B /* OrderReferalView.swift */,
+				82161FE9268B3548001F530E /* OrderMapView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 		82360B6A268758DC00C6EA95 /* Accounting */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +359,7 @@
 		82EC597F2635ED01009E5801 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				82161FE8268B351F001F530E /* Order */,
 				82EC59802635ED0C009E5801 /* SpashScreenView.swift */,
 				824517A42688F2C400C3099A /* BottomSheet SignIn */,
 				82B4EED42688DD2F003B8CF1 /* BottomSheet DeliveryDetails */,
@@ -357,6 +376,7 @@
 			children = (
 				82F195F2263E09A30079FA8B /* BottomOrderCardView.swift */,
 				8218D12E2689044000A95151 /* AgeVerificationView.swift */,
+				8266F05A268B21FF0039973B /* LargeRatingView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -506,6 +526,7 @@
 				82F195FB263E114F0079FA8B /* CategoryDetailView.swift in Sources */,
 				826AA1EF2636008E001EFDBB /* OnBoardingView.swift in Sources */,
 				82360B632687568D00C6EA95 /* LoadingButtonView.swift in Sources */,
+				8266F060268B266C0039973B /* OrderConfirmationView.swift in Sources */,
 				82B4EED62688DD5C003B8CF1 /* DeliveryDetailsForm.swift in Sources */,
 				82D9CBB92686EA6F005FFB62 /* AccountDetails.swift in Sources */,
 				829C2E592689DFCB00750C4D /* String_Extensions.swift in Sources */,
@@ -515,13 +536,16 @@
 				82D9CB842686D9E8005FFB62 /* View+Extensions.swift in Sources */,
 				829C2E5E2689E1FC00750C4D /* LargeBlackButton.swift in Sources */,
 				82D9CB9E2686DF74005FFB62 /* TopNavigationHeaderView.swift in Sources */,
+				8266F056268B1E090039973B /* OrderReferalView.swift in Sources */,
 				8253090C268628B500272F28 /* AboutUsView.swift in Sources */,
 				82EC594A2635EBDC009E5801 /* ContentView.swift in Sources */,
 				82FC122D263DDFF200F73F4D /* ChangeAddressView.swift in Sources */,
 				829C2E632689E5F900750C4D /* CatalogSideMenuView.swift in Sources */,
 				82EC59482635EBDC009E5801 /* IshopApp.swift in Sources */,
 				82E8F2D6263D724B00ED2375 /* OnBoardingStep.swift in Sources */,
+				82161FEA268B3548001F530E /* OrderMapView.swift in Sources */,
 				82D9CB7B2686D7F6005FFB62 /* CatalogDefaultSearchView.swift in Sources */,
+				8266F05B268B21FF0039973B /* LargeRatingView.swift in Sources */,
 				82D9CB8D2686DA60005FFB62 /* CartView.swift in Sources */,
 				8245178F2688E5BA00C3099A /* LargePrimaryButton.swift in Sources */,
 				82B37BA92689DB130004DD2A /* MyOrdersView.swift in Sources */,

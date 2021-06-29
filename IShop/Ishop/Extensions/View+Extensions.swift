@@ -8,6 +8,18 @@
 import SwiftUI
 
 
+
+struct LargeButtonStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.mainBackground)
+            .frame(maxWidth: .infinity)
+            .frame(height: 55)
+            .background(Color.mainBlack)
+    }
+}
+
+
 struct GrayField: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -52,6 +64,9 @@ struct RoundedCorner: Shape {
 
 
 extension View {
+    public func largeButtonStyle() -> some View {
+        ModifiedContent(content: self, modifier: LargeButtonStyle())
+    }
     public func grayField() -> some View {
         ModifiedContent(content: self, modifier: GrayField())
     }
@@ -70,5 +85,6 @@ extension View {
                         modifier: BluredView(isActive: isActive,
                                              intensity: intensity))
     }
+    
 
 }
