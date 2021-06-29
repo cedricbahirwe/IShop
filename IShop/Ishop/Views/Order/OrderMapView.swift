@@ -25,6 +25,8 @@ struct OrderMapView: View {
         name: "John Doe",
         coordinate: CLLocationCoordinate2D(latitude: -1.939547,
                                            longitude: 30.074418))
+    
+    @Environment(\.presentationMode) private var presentationMode
     var body: some View {
         ZStack {
             Map(coordinateRegion: $region,
@@ -46,12 +48,14 @@ struct OrderMapView: View {
                 
             }
             .ignoresSafeArea(.all, edges: .all)
-            //                        .frame(width: 400, height: 300)
             
             VStack(alignment: .leading) {
-                Button("Close"){ }
-                    .foregroundColor(.primary)
-                    .padding()
+                Button("Close"){
+                    presentationMode.wrappedValue.dismiss()
+                    
+                }
+                .foregroundColor(.primary)
+                .padding()
                 
                 Spacer()
                 VStack {
