@@ -8,7 +8,6 @@
 import SwiftUI
 import MapKit
 
-
 struct AnnotatedItem: Identifiable {
     let id = UUID()
     var name: String
